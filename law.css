@@ -123,6 +123,8 @@ nav {
 
 }
 
+
+
 .nav-left a {
   text-decoration: none;
   color: #007BFF;
@@ -131,6 +133,21 @@ nav {
   padding: 8px 12px;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav a.Page1 {
+  background-color: #007BFF;
+  color: white;
+}
+
+nav a.Page2 {
+  background-color: #007BFF;
+  color: white;
+}
+
+nav a.Page3 {
+  background-color: #007BFF;
+  color: white;
 }
 
 .nav-left a:hover {
