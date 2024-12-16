@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VODAW - Visualizations of Data Around The World</title>
+    <meta name="description" content="Discover a wide range of interactive dashboards on topics like Law, Sports, Technology, Health, Geography, and more with VODAW. Dive into engaging graphs and data visualizations that make learning and understanding complex information easy and fun!">
+    <meta name="keywords" content="data visualization, law, sports, technology, health, geography, elections, science, economics, data analysis,Dashboards,Data,Our World in Data">
+    <meta name="author" content="VODAW">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="grid_project.css">
+    <link rel="stylesheet" href="commonheader.css">
+    <link rel="icon" href="images/Screenshot 2024-11-29 113654.png">
+    <link rel="stylesheet" href="commonFooter.css">
+</head>
+
+<body>
+    <header class="grid-header">
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-left">
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle">Latest &#11033</a>
+                <div class="dropdown-content">
+                    <a href="electionPage2.html">Jharkhand & Mahrashtra Election Result </a>
+                    <a href="https://lookerstudio.google.com/s/nBnlF4LmfS0">Summer Olympic</a>
+                    <a href="videos/India Population.mp4">india's Population</a>
+                </div>
+            </div>
+            <a href="#about-section">About Us</a>
+            <a href="#Contact-id">Contact Us</a>
+            <a href="popularDashboard.html">Popular Dashboards</a>
+            <a href="career.html" target="_blank">Career</a>
+            <!--<button class="Donate-tag" onclick="window.location.href='donate.html';">Donate</button>--> 
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Try 'Law', 'Technology', 'Sports'........">
+                <div id="suggestionsDropdown" class="search-suggestions"></div>
+            </div>
+            
+            <button id="darkModeToggle" onclick="window.open('services.html', '_blank');">Services</button>
+
+        </div>
+    </nav>
+    
+        
+    <div class="grid2" id="subgrid-section">
+        
+        <div class="subgrid" id="law-subgrid" data-category="Law">
+            <div class="img">
+                <img src="thumnails/Crime&Law_OrgL.jpg" alt="Thumbnail 1">
+            </div>
+            <div>
+                <p class="para">Law</p>
+            </div>
+        </div>
+        <div class="subgrid" id="sports-subgrid" data-category="Sports">
+            <div class="img" id="sports-subgrid">
+                <img src="thumnails/Sports_OrgL.jpg" alt="Thumbnail 2">
+            </div>
+            <div>
+                <p class="para">Sports</p>
+            </div>
+        </div>
+        <div class="subgrid" id="tech-subgrid" data-category="Technology">
+            <div class="img">
+                <img src="thumnails/Technology_OrgL.jpg">
+            </div>
+            <div>
+                <p class="para">Technology</p>
+            </div>
+        </div>
+        <div class="subgrid" id="health-subgrid" data-category="Health">
+            <div class="img">
+                <img src="thumnails/Health_OrgL.jpg" alt="Thumbnail 4">
+            </div>
+            <div>
+                <p class="para">Health</p>
+            </div>
+        </div>
+        <div class="subgrid" id="geo-subgrid" data-category="GeoPolitics">
+            <div class="img">
+                <img src="thumnails/Geopolitics_OrgL.jpg" alt="Thumbnail 5">
+            </div>
+            <div>
+                <p class="para">GeoPolitics</p>
+            </div>
+        </div>
+        <div class="subgrid" id="Science-subgrid" data-category="Science">
+            <div class="img">
+                <img class="sciencepic" src="thumnails/OIP7.jpeg" alt="Thumbnail 6">
+            </div>
+            <div>
+                <p class="para">Science</p>
+            </div>
+        </div>
+        <div class="subgrid" id="eco-subgrid" data-category="Economics">
+            <div class="img">
+                <img class="economicpics" src="thumnails/economic-line-icon-logo-illustration-free-vector (1).jpg"
+                    alt="Thumbnail 7">
+            </div>
+            <div>
+                <p class="para">Economics</p>
+            </div>
+        </div>
+        <div class="subgrid1" id="Election-subgrid" data-category="Election">
+            <div class="img">
+                <img src="thumnails/election01.jpg" alt="Thumbnail 8">
+            </div>
+            <div>
+                <p class="para">Election</p>
+            </div>
+        </div>
+        <div class="subgrid" id="geography-subgrid" data-category="Geography">
+            <div class="img">
+                <img src="thumnails/Geography_OrgL.jpg" alt="Geography">
+            </div>
+            <div>
+                <p class="para">Geography</p>
+            </div>
+        </div>
+        <div class="subgrid" id="Education-subgrid" data-category="Education">
+            <div class="img">
+                <img src="thumnails/Education_OrgL.jpg" alt="Thumbnail 10">
+            </div>
+            <div>
+                <p class="para">Education</p>
+            </div>
+        </div>
+        <div class="subgrid1" id="History-subgrid" data-category="History">
+            <div class="img">
+                <img src="thumnails/History_OrgL.jpg" alt="Thumbnail 11">
+            </div>
+            <div>
+                <p class="para">History</p>
+            </div>
+        </div>
+        <div class="subgrid1" id="awards-subgrid" data-category="Awards">
+            <div class="img">
+                <img src="thumnails/Awards_OrgL.jpeg.jpg" alt="Thumbnail 12">
+            </div>
+            <div>
+                <p class="para">Awards</p>
+            </div>
+        </div>
+        <div class="subgrid" id="Entertainment-subgrid" data-category="Entertainment">
+            <div class="img">
+                <img src="thumnails/Entertainment_OrgL.jpg" alt="Thumbnail 13">
+            </div>
+            <div>
+                <p class="para">Entertainment</p>
+            </div>
+        </div>
+        <div class="subgrid" id="agriculture-subgrid" data-category="Agriculture">
+            <div class="img">
+                <img src="thumnails/Agriculture_OrgL.jpeg.jpg" alt="Thumbnail 14">
+            </div>
+            <div>
+                <p class="para">Agriculture</p>
+            </div>
+        </div>
+        <div class="subgrid1" id="business-subgrid" data-category="Business">
+            <div class="img">
+                <img src="images/coming soon.webp" alt="Thumbnail 15">
+            </div>
+            <div>
+                <p class="para">More categories coming soon!</p>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="about-us" id="about-section">
+        <h2>About Us</h2>
+        <p>
+            Welcome to our premier data visualization platform! We excel in converting intricate datasets into clear and
+            actionable insights using beautifully designed and accurate graphs. Our team of experienced data analysts is
+            adept at handling diverse datasets, delivering visualizations that uncover trends, patterns, and critical
+            information. Whether you’re exploring financial metrics, scientific data, or other complex datasets, our
+            sophisticated tools are designed to help you navigate and understand your data with confidence and ease.
+
+            Our mission is to empower individuals and organizations with the knowledge needed to make data-driven
+            decisions. We take pride in providing user-friendly, visually appealing graphs that simplify the
+            complexities of data analysis. With a focus on accuracy and accessibility, we are committed to helping you
+            achieve clarity and insight from your data.
+        </p>
+    </div>
+    <!-- Contact Us Section -->
+    <section class="Contact-sec" id="Contact-id">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-us" id="contact-section">
+                <h2>Contact Us</h2>
+                <form id="contact-form" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="organization">Organization:</label>
+                    <input type="text" id="organization" name="organization" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+
+                    <label for="message">Message/Reviews:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Reviews Section -->
+            <div class="reviews">
+                <h2>Reviews</h2>
+                <div class="review">
+                    <p>An excellent platform for data visualization with a clean and engaging interface that simplifies exploring complex topics.</p>
+                    <span>- Avinash Srivastav <br>Data Analyst</span>
+                </div>
+                <div class="review">
+                    <p>While the website offers rich data visualizations, adding more interactivity to dashboards could enhance the user experience.
+                    </p>
+                    <span>- Shahid Farooqui <br>Data Engineer</span>
+                </div>
+                <div class="review">
+                    <p>Vodaw.org provides a good starting point for data enthusiasts, though some sections could use more detailed insights.</p>
+                    <span>- Michael Lee <br>Financial Analyst</span>
+                </div>
+                <div class="review">
+                    <p>The thematic icons and color schemes are well-designed, making navigation intuitive and visually appealing.</p>
+                    <span>- Sofia Martinez <br>Product Designer</span>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+    <!--Cookie Banner-->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>
+            We use cookies to enhance your experience on our website. By continuing to browse, you consent to our use of cookies.
+            <a href="privacy-policy.html" target="_blank">Learn more</a>
+        </p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction
+                to the original content.
+            <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink" href="https://vodaw.org/">https://vodaw.org/</a>  (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. </p>
+        </div>
+    </footer>
+
+
+    <script>
+        
+        // JavaScript for navigating to Law page
+        document.getElementById('logo-id').addEventListener('click', function () {
+            window.open('index.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById('law-subgrid').addEventListener('click', function () {
+            window.open('law.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("sports-subgrid").addEventListener('click', function () {
+            window.open('sports.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("tech-subgrid").addEventListener('click', function () {
+            window.open('technology.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("health-subgrid").addEventListener('click', function () {
+            window.open('health.html', '_blank'); // Opens the Law page in a new tab
+        });
+        document.getElementById("geo-subgrid").addEventListener('click', function () {
+            window.open('geopolitics.html', '_blank');
+        });
+        document.getElementById("Science-subgrid").addEventListener('click', function () {
+            window.open('science.html', '_blank');
+        });
+        document.getElementById("eco-subgrid").addEventListener('click', function () {
+            window.open('economics.html', '_blank');
+        });
+        document.getElementById("Election-subgrid").addEventListener('click', function () {
+            window.open('election.html', '_blank');
+        });
+        document.getElementById("geography-subgrid").addEventListener('click', function () {
+            window.open('geography.html', '_blank');
+        });
+        document.getElementById("Education-subgrid").addEventListener('click', function () {
+            window.open('education.html', '_blank');
+        });
+        document.getElementById("History-subgrid").addEventListener('click', function () {
+            window.open('history.html', '_blank');
+        });
+        document.getElementById("awards-subgrid").addEventListener('click', function () {
+            window.open('awards.html', '_blank');
+        });
+
+        document.getElementById("Entertainment-subgrid").addEventListener('click', function () {
+            window.open('entertainment.html', '_blank');
+        });
+        document.getElementById("agriculture-subgrid").addEventListener('click', function () {
+            window.open('agriculture.html', '_blank');
+        });
+        document.getElementById("business-subgrid").addEventListener('click', function () {
+            window.open('moreCategory.html', '_blank');
+        });
+
+        // Function to filter categories based on search input and show suggestions
+       
+        function searchSubgrids() {
+            let query = document.getElementById('searchBar').value.toLowerCase();
+            let suggestionsDropdown = document.getElementById('suggestionsDropdown');
+            suggestionsDropdown.innerHTML = ''; // Clear existing suggestions
+
+            // Search for both subgrid and subgrid1
+            let subgrids = document.querySelectorAll('.subgrid, .subgrid1'); // Select both subgrids
+            let matches = 0;
+
+            subgrids.forEach(subgrid => {
+                let category = subgrid.getAttribute('data-category').toLowerCase();
+                if (category.includes(query)) {
+                    let suggestion = document.createElement('a');
+                    
+                    // Create a dynamic link to the corresponding HTML page based on category
+                    let categoryName = subgrid.getAttribute('data-category').toLowerCase();
+                    suggestion.href = `${categoryName}.html`; // Links to law.html, sports.html, art.html, etc.
+
+                    suggestion.textContent = subgrid.getAttribute('data-category'); // Display the category name
+                    suggestionsDropdown.appendChild(suggestion);
+                    matches++;
+                }
+            });
+
+            if (matches > 0) {
+                suggestionsDropdown.style.display = 'block'; // Show dropdown if matches exist
+            } else {
+                suggestionsDropdown.style.display = 'none'; // Hide dropdown if no matches
+            }
+        }
+
+        
+
+
+        // Event listener to trigger searchSubgrids when user types in the search bar
+        document.getElementById('searchBar').addEventListener('input', searchSubgrids);
+
+        // Function to close suggestions when clicking outside the dropdown
+        window.onclick = function (event) {
+            if (!event.target.matches('#searchBar') && !event.target.matches('.search-suggestions a')) {
+                document.getElementById('suggestionsDropdown').style.display = 'none';
+            }
+        };
+
+        
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var formData = new FormData(this);
+
+            fetch('https://script.google.com/macros/s/AKfycbyw9_OKEvFQVC4a4HBPahRFLsSByUoSGuxK0o2EcGTAtcgGdsBg7VFDVDoERyLdOEGn/exec', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text())
+                .then(result => {
+                    alert('Form submitted successfully!');
+                    console.log(result);
+                })
+                .catch(error => {
+                    alert('Error submitting form');
+                    console.error(error);
+                });
+        });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptButton = document.getElementById('accept-cookies');
+
+            // Check if the user already accepted cookies
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                cookieBanner.style.display = 'none';
+            }
+
+            // Handle cookie acceptance
+            acceptButton.addEventListener('click', () => {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieBanner.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

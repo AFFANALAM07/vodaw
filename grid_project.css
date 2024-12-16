@@ -1,0 +1,508 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    
+}
+:root {
+    --bg-color:  #f3f0f0;
+    --text-color: black;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  body.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dbe5f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Left Section */
+  .nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-left a {
+    text-decoration: none;
+    color: #313131;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white;
+    
+  }
+
+  .Donate-tag{
+    background-color: red;
+    font-size: 14px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .Donate-tag:hover{
+    background-color: rgb(224, 86, 86);
+  }
+  .nav-left a:hover {
+    background-color: #007BFF;
+    color: white;
+  }
+
+.nav-left {
+    position: relative;
+}
+/* Position the parent container relative */
+.search-container {
+  position: relative;
+}
+
+/* Style the dropdown suggestions */
+.search-suggestions {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown just below the search bar */
+  left: 0; /* Align it to the left of the search bar */
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%; /* Make the dropdown width same as the search bar */
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+/* Style the links inside the dropdown */
+.search-suggestions a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hover effect for links */
+.search-suggestions a:hover {
+  background-color: #bfbfbf;
+}
+
+ /* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown-toggle {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 300px;
+  overflow: hidden;
+  border: 1px solid rgb(136, 136, 136);
+}
+
+/* Style for each item inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #d9d9d9;
+  color: #000;
+  border-radius: 0px;
+}
+
+/* Show the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  
+#darkModeToggle {
+  background-color: #ff7f05;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: glow-dim .6s infinite alternate ease-in-out;
+}
+
+/* Keyframes for glowing and dimming effect */
+@keyframes glow-dim {
+  0% {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      transform: scale(1);
+  }
+  100% {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+      transform: scale(1.2);
+  }
+}
+
+
+  
+#searchBar {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    #searchBar {
+      width: 150px;
+    }
+  
+    .nav-right {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  
+
+/* Grid Container Styling */
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    margin: 30px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    background-color: white;
+    
+}
+
+/* Styling for Subgrid Items */
+.subgrid {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffffff6;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto; /* Adjusted height for better image fit */
+    width: 100%;
+    cursor: pointer;
+    border:2px dashed #0e0e0e4d
+}
+
+.subgrid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border:2px dashed #0e0e0e
+}
+
+/* Adjusted Image Styling */
+
+.sciencepic{
+    margin-top: 15px;
+    height: 110px;
+    margin-bottom: 0;
+}
+.economicpics{
+    height: 100px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+.subgrid .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px; /* Adjusted height for the image container */
+    width: 100%;
+    overflow: hidden;
+}
+
+.subgrid .img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure image fits within container */
+    transition: transform 0.3s ease;
+
+}
+
+.subgrid:hover .img img {
+    transform: scale(1.05);
+}
+
+.para {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+.subgrid1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px; /* Adjusted height for better image fit */
+    width: 100%;
+    cursor: pointer;
+    border:2px dashed #0e0e0e4d
+}
+
+.subgrid1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border:2px dashed #0e0e0e
+}
+.subgrid1 .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px; /* Adjusted height for the image container */
+    width: 100%;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.subgrid1 .img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure image fits within container */
+    transition: transform 0.3s ease;
+
+}
+
+/* Styling for the About Us Section */
+.about-us {
+    grid-column: 1 / -1; /* This makes the About Us section span the entire width of the grid */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 5px 20px;
+    margin-bottom: 0;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #fe9115;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us p {
+    font-size: 1.3em;
+    color: #333333;
+    line-height: 2;
+    text-align: justify;
+    margin: 10px 0;
+    font-style: italic;
+}
+.conatct-sec{
+    margin: 25px;
+}
+/* General Contact Container Layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Contact Form */
+.contact-us {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact-us h2 {
+    font-size: 2em;
+    color: #fe8d11;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-us button {
+    background-color: #fe8d11;
+    color: white; /* Change text color to white for better visibility */
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-us button:hover {
+    background-color: #ff6f00; /* Slightly lighter background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Reviews Section */
+.reviews {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 36px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reviews h2 {
+    font-size: 2em;
+    color: #fe8d11;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #fe8d11;
+    background-color:#fe8b111a;
+    border-radius: 5px;
+}
+
+.review p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+}
+
+.review span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    text-align: right;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-us,
+    .reviews,
+    .user-review-box {
+        width: 100%;
+    }
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-banner p {
+  margin: 0;
+}
+
+.cookie-banner a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-banner button:hover {
+  background-color: #ffcc00;
+}

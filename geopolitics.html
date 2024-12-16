@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPolitics-VODAW</title>
+    <link rel="stylesheet" href="geopolitics.css">
+    <link rel="stylesheet" href="commonFooter.css">
+    <link rel="stylesheet" href="commonheader.css">
+    <link rel="icon" href="thumnails/Geopolitics_OrgL.jpg">
+</head>
+
+<body>
+    <!-- Header (unchanged) -->
+    <header class="grid-header">
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="content-title">
+            <h2> GeoPolitics Dashboards</h2>
+            <p>
+                Explore Dashboards related to geopolitics,
+                global power dynamics, and international relations across various regions
+                and nations. Our platform offers compelling visual insights into geopolitical
+                trends, diplomatic policies, and territorial changes, helping you grasp the
+                intricacies of global governance and security strategies.
+            </p>
+        </div>
+
+        <!-- Flexbox for two inline examples -->
+        <div class="eco-example">
+
+            <!-- Example 1 -->
+            <div class="eco-visualization">
+                <h3 class="fancy-heading">Aerial Bombing Operations in World War II</h3>
+                <p class="description">
+                    The dashboard presents a breakdown of aerial bombing operations
+                    during World War II, featuring a world map that uses color coding
+                    to depict the intensity of bombing and a table showing the number
+                    of bombs dropped across various countries. For example, Germany was
+                    hit with 61,744 bombs, followed by Italy with 23,689, and France with
+                    22,226. Additionally, a slicer named Target Country allows users to
+                    explore specific countries interactively.This feature provides a more
+                    personalized and in-depth understanding of the bombing patterns during the World war II.
+                </p>
+
+                <div class="iframe-container">
+                    <div class="loader">
+                        <img src="images/LoaderImg.webp" alt="Loading...">
+                    </div>
+                    <iframe width="600" height="450"
+                        src="https://lookerstudio.google.com/embed/reporting/5fe763e5-b38f-426c-8770-44e1e90eafbc/page/wH7DE"
+                        frameborder="0" style="border:0" allowfullscreen
+                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                        onload="iframeLoaded(this)">
+                    </iframe>
+                </div>
+            </div>
+
+
+            <!-- Example 2 -->
+            <div class="eco-visualization" id="netmigration">
+                <h3 class="fancy-heading">2024 Global Net Migration</h3>
+                <p class="description">
+                    This Dashboard presents the net migration status of countries in 2024.
+                    On the world map, countries experiencing more people leaving are highlighted in red,
+                    while those with more people arriving are shown in green. By using the Country Button,
+                    you can select a specific country to view its detailed migration data.
+                    The Scorecard will display the net migration value.
+                    If the background of the scorecard is red, it indicates a negative net migration,
+                    meaning more people are leaving the country. If the background is green,
+                    it indicates positive net migration, with more people moving into the country.
+
+                </p>
+
+                <div class="iframe-container">
+                    <div class="loader">
+                        <img src="images/LoaderImg.webp" alt="Loading...">
+                    </div>
+                    <iframe width="600" height="450"
+                        src="https://lookerstudio.google.com/embed/reporting/e7c7a8bf-3070-43c3-a2ab-800775fab57c/page/5ANFE"
+                        frameborder="0" style="border:0" allowfullscreen
+                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                        onload="iframeLoaded(this)">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a class="Page1" href="geopolitics.html">Page 1</a>
+            <a href="GeopoliticsPage2.html">Page 2</a>
+            <a href="#Page3">Page 3</a>
+
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
+                express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific
+                direction
+                to the original content.
+                <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink"
+                    href="https://vodaw.org/">https://vodaw.org/</a> (the "Site") is for general informational purposes
+                only. All information on the Site is provided in good faith, however, we make no representation or
+                warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability,
+                availability, or completeness of any information on the Site.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.querySelectorAll('.hover-video').forEach(video => {
+            video.addEventListener('mouseenter', function () {
+                video.play(); // Play video on hover
+            });
+
+            video.addEventListener('mouseleave', function () {
+                video.pause(); // Pause video when mouse leaves
+            });
+
+        });
+
+        document.getElementById('logo-id').addEventListener('click', function () {
+            window.open('index.html', '_blank'); // Opens the Law page in a new tab
+        });
+        // Function to handle iframe loading
+        function iframeLoaded(iframe) {
+            var container = iframe.parentNode;
+            container.classList.add('iframe-loaded'); // Show iframe and hide loader
+        }
+
+        // Smooth scroll JavaScript
+        document.getElementById('home-btn').addEventListener('click', function () {
+            window.location.href = 'index.html'; // Navigates back to the main page
+        });
+
+    </script>
+</body>
+
+</html>

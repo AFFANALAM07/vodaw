@@ -1,0 +1,168 @@
+/* General body settings */
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.Donate-tag {
+  border: 3px solid red;
+}
+
+
+/* Content Title Styling */
+.content-title {
+  padding: 10px;
+  background-color: #f8f8f8;
+  /* Subtle background to make it stand out */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow */
+  text-align: center;
+  /* Center text within the title */
+}
+
+/* h2 Styling inside .content-title */
+.content-title h2 {
+  color: #fe7c02;
+  font-size: 1.8em;
+  /* Larger font size for emphasis */
+  margin: 0;
+}
+
+/* p Styling inside .content-title */
+.content-title p {
+  color: #b59c3a;
+  font-size: 1.2em;
+  margin: 2px;
+  text-align: left;
+  padding: 0px 100px;
+
+}
+
+.content-title h3 {
+  margin: 0;
+  padding: 0;
+  color: #858282;
+}
+
+
+/* Content Styling */
+.chart-section {
+  padding: 35px 5px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.eco-example {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  /* Space between the two example containers */
+  flex-wrap: wrap;
+  padding: 10px 60px
+}
+
+/* Each visualization container */
+.eco-visualization {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eco-visualization:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Fancy heading style */
+.fancy-heading {
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+
+
+/* Description styling */
+.description {
+  font-size: 1.15em;
+  color: #464646;
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 0px 40px;
+}
+
+/* Navigation Bar Styling */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #bbbaba;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Left Section */
+.nav-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #007BFF;
+  background-color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-left a:hover {
+  background-color: #007BFF;
+  color: white;
+  transform: scale(1.1);
+  /* Smooth scaling effect */
+}
+
+
+.nav-left {
+  position: relative;
+}
+
+
+
+/* Video Hover */
+.hover-video {
+  display: block;
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+}
+
+.hover-video:hover {
+  opacity: 1;
+}
+
+.note {
+  color: red;
+}

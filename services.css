@@ -1,0 +1,203 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #031c32);
+  color: #333;
+  line-height: 1.5;
+  
+}
+
+/* Styling for the Header */
+.grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ffc107b3, #ff7a00);
+  text-align: center;
+}
+
+.logo-space {
+  flex: 0 0 auto;
+}
+
+.logo {
+  height: 124px; /* Set height */
+  width: 162px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure proper fitting */
+  mix-blend-mode:multiply; /* Blend logo with background */
+  background-color: transparent; /* Ensure no separate background */
+  filter: brightness(1.5); /* Optional: Slightly adjust brightness */
+  cursor: pointer;
+}
+
+.logo1 {
+  height: 124px; /* Set height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure proper fitting */
+  mix-blend-mode:multiply; /* Blend logo with background */
+  background-color: transparent; /* Ensure no separate background */
+  filter: brightness(1.2); /* Optional: Slightly adjust brightness */
+  padding: 0px 200px;
+}
+
+.grid-header h1 {
+  flex: 1;
+  text-align: left;
+  font-size: 2em; /* Large and prominent */
+  letter-spacing: 4px; /* Spaced for style */
+  margin: 0;
+  color: #ffffff; /* Clean white color */
+  font-family: 'Poppins', sans-serif; /* Modern and stylish font */
+  text-transform: uppercase; /* Uniform uppercase letters */
+  text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Suggestion: Add some responsiveness for better handling on smaller screens */
+@media (max-width: 768px) {
+  .grid-header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-space {
+    margin-bottom: 10px;
+  }
+
+  .grid-header h1 {
+    font-size: 1.2em;
+  }
+}
+
+/* General Section Styling */
+.services-section {
+  text-align: center;
+  margin: 27px auto;
+  max-width: 800px;
+  border: 3px solid #fd8208;
+  
+}
+
+.services-heading {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fd8208;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Styling */
+.services-navigation {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: white;
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.service-option {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: #9b9a9a;
+  color: white;
+}
+
+.service-option:hover {
+  background-color: #fd8308b5;
+  color: white;
+}
+
+.service-option.active {
+  background-color: #fd8208;
+  color: white;
+  font-weight: bold;
+ 
+}
+
+/* Service Content Styling */
+.services-content {
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 1px 15px 15px 15px  ; /* Adds some padding around the content */
+  background-color: #fff; /* White background for better contrast */
+}
+
+
+.service-detail {
+  display: none;
+  text-align: left;
+  animation: fadeIn 0.5s ease;
+}
+
+.service-detail.active {
+  display: block;
+}
+
+.service-detail img, .service-detail iframe {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Navigation Bar Styling */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #d7d7d7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Left Section */
+.nav-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #007BFF;
+  background-color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-left a:hover {
+  background-color: #007BFF;
+  color: white;
+  transform: scale(1.1);
+  /* Smooth scaling effect */
+}
+
+
+.nav-left {
+  position: relative;
+}
+

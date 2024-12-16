@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us - Donate</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="commonFooter.css">
+    <link rel="stylesheet" href="commonheader.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="grid-header">
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA AROUND THE WORLD</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="nav-left">
+            <button id="home">Home</button>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="donate-section">
+            <div class="donate-content">
+                <h1>Support Our Work</h1>
+                <p>We appreciate your support! Your donations help us continue creating valuable data projects, building machine learning models, and improving our website.</p>
+                <p><strong>Your contribution will help us:</strong></p>
+                <ul>
+                    <li>Expand and enhance our data analysis projects.</li>
+                    <li>Develop new machine learning models for practical applications.</li>
+                    <li>Improve the user experience on our website.</li>
+                </ul>
+
+                <h2>How You Can Help</h2>
+                <p>Donating is easy! Simply click the button below to contribute. Every donation, big or small, is appreciated!</p>
+
+                <!-- Razorpay Donation Button -->
+                <div class="donate-button">
+                    <button id="donateBtn">Donate Now</button>
+                </div>
+
+                <h3>Or Donate via Paytm</h3>
+                <p>If you prefer to donate using Paytm, you can scan the QR code below:</p>
+
+                <!-- Paytm QR Code Image -->
+                <div class="paytm-qr">
+                    <img src="images/QR.jpg" alt="Paytm QR Code" class="paytm-qr-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 VISUALISATION OF DATA AROUND THE WORLD. </p>
+            <p>All rights reserved. Unauthorized use, duplication of this material without express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD with appropriate and specific direction
+                to the original content.</p>
+        </div>
+    </footer>
+
+    <!-- Razorpay Script for Payment -->
+    <script>
+        var options = {
+            "key": "your_razorpay_key", // Replace with your Razorpay key
+            "amount": "50000", // Amount in paise (50000 paise = ₹500)
+            "currency": "INR",
+            "name": "Your Website Name",
+            "description": "Support Our Work",
+            "image": "https://yourwebsite.com/logo.png", // Optional: your logo
+            "handler": function (response) {
+                alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
+            },
+            "prefill": {
+                "name": "",
+                "email": "",
+                "contact": ""
+            },
+            "notes": {
+                "address": "Razorpay Donation"
+            },
+            "theme": {
+                "color": "#e60000"
+            }
+        };
+        
+        var rzp1 = new Razorpay(options);
+
+        // Attach the click event to open Razorpay payment modal
+        document.getElementById('donateBtn').onclick = function(e) {
+            rzp1.open();
+            e.preventDefault();
+        }
+
+        // Smooth scroll JavaScript for Home button
+        document.getElementById('home').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Navigates back to the main page
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore a variety of datasets related to sports, athletes, and competitions from around the world. Interactive visualizations on the Summer Olympics, FIFA World Cup, and more.">
+        <meta name="keywords" content="sports, data visualization, Olympics, FIFA World Cup, athletes, sports statistics, interactive charts">
+        <meta name="author" content="VODAW">
+        <meta property="og:title" content="Sport Data Visualizations - VODAW">
+        <meta property="og:description" content="Explore a variety of datasets related to sports, athletes, and competitions from around the world. Interactive visualizations on the Summer Olympics, FIFA World Cup, and more.">
+        <meta property="og:image" content="images/cover02.jpg">
+        <meta property="og:url" content="https://vodaw.org/sports.html">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Sport Data Visualizations - VODAW">
+        <meta name="twitter:description" content="Explore a variety of datasets related to sports, athletes, and competitions from around the world. Interactive visualizations on the Summer Olympics, FIFA World Cup, and more.">
+        <meta name="twitter:image" content="images/cover02.jpg">
+        <title>Sport - VODAW</title>
+        <link rel="stylesheet" href="sports.css">
+        <link rel="stylesheet" href="commonFooter.css">
+        <link rel="stylesheet" href="commonheader.css">
+        <link rel="icon" href="thumnails/Sports_OrgL.jpg">
+    </head>
+<body>
+    <!-- Header -->
+    <header class="grid-header">
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="content-title">  
+            <h2>Sport Dashboards</h2>
+            <p>
+                Explore a variety of datasets related to sports, athletes, and competitions from around the world. We provide insightful visualizations that highlight trends, performance analytics, and statistical comparisons across different sports. Dive into detailed case studies, team dynamics, and individual player achievements through our dynamic data visualizations in the sports field.</p>
+             
+        </div>
+        <!-- Flexbox for two inline examples -->
+        <div class="sports-examples">
+           
+            <!-- Example 1 -->
+            <div class="sports-visualization" id="Olympic">
+                <h3 class="fancy-heading" >Summer Olympic Dashboard </h3>
+                <p class="description">
+                    The Summer Olympic Dashboard provides an interactive overview of the medal counts for every country. 
+                    Using the slicer, you can easily filter and view the number of gold, silver, and bronze medals won by each nation. 
+                    Additionally, a bar chart displays the total number of medals won.</p>
+                <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/a0cf94f9-e5fb-43b5-bb4c-cfcd5cdafbe2/page/yQXGE" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            </div>
+            
+             <!-- Example 2 -->
+            <div class="sports-visualization">
+                <h3 class="fancy-heading">The Most famous Sports in the World</h3>
+                <p class="description">A survey conducted by a sports company to determine the most popular sports, as depicted in this chart, with the Y-axis representing the number of fans in billions.</p>       
+                <iframe width="663" height="466" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQt8FlMyY_A2jfJsZiIWgx2ZgXBeWeuPLndoHxrspjqBgM9IP9R6XNAykgVzpn_GQtrb0d49v51ldNM/pubchart?oid=1699501764&amp;format=interactive"></iframe>
+                
+            </div>
+
+            <!-- Example 3 -->
+            <div class="sports-visualization">
+                <h3 class="fancy-heading">Distribution of FIFA World Cup Wins by Country</h3>
+                <p class="description">This 3D pie chart visually represents the number of FIFA World Cup titles won by various countries. Each segment of the pie corresponds to a nation that has lifted the prestigious trophy. The numbers inside each slice indicate the total wins</p>
+                
+                <iframe width="663" height="466" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZFE1T9tZ30M87FZGMceK6k-1GyNx6uMSeFcH9r0xfIpBHN4gJ47ndyeWgGXpnX1WOTqD-hdOgX_tR/pubchart?oid=1449288316&amp;format=interactive"></iframe>
+               
+            </div>
+            <!-- Example 4 -->
+            <div class="sports-visualization">
+                <h3 class="fancy-heading">Countries in Summer Olympics Medal Wins (1896-2024)</h3>
+                <p class="description">
+                    This animated chart showcases the dynamic rise and fall
+                    of the top 10 countries in total medal counts at the Summer Olympics,
+                    spanning multiple decades.When you hover over the chart, 
+                    the animation starts playing, When you move your mouse away, the animation stops.
+                </p>   
+                
+                <div class="iframe-container">
+                    <!-- Replace iframe with video element -->
+                    <video 
+                        width="600" height="450" 
+                        muted 
+                        loop 
+                        class="hover-video">
+                        <source src="videos/medal by yeR.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="sports.html">Page 1</a>
+            <a href="#SportsPage2.html">Page 2</a>
+            <a href="#SportsPage3">Page 3</a>
+        </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction
+                to the original content.
+            <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink" href="https://vodaw.org/">https://vodaw.org/</a>  (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('logo-id').addEventListener('click', function () {
+            window.open('index.html', '_blank'); // Opens the Home page in a new tab
+        });
+        document.querySelectorAll('.hover-video').forEach(video => {
+            video.addEventListener('mouseenter', function() {
+            video.play(); // Play video on hover
+        });
+
+            video.addEventListener('mouseleave', function() {
+                 video.pause(); // Pause video when mouse leaves
+         });
+            });
+    </script>
+</body>
+</html>

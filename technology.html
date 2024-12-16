@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore data visualizations related to technology innovations, AI, and global tech trends on VODAW.">
+    <meta name="keywords" content="technology, data visualization, AI, innovations, tech trends, electronic commodities, India exports, India imports">
+    <meta name="author" content="VODAW">
+    <meta property="og:title" content="Technology Dashboards - VODAW">
+    <meta property="og:description" content="Explore interactive data visualizations on technological innovations and trends, including AI, exports, and imports.">
+    <meta property="og:image" content="images/cover02.jpg">
+    <meta property="og:url" content="https://vodaw.org/technology.html">
+    <title>Technology - VODAW</title>
+    <link rel="stylesheet" href="technology.css">
+    <link rel="stylesheet" href="commonFooter.css">
+    <link rel="stylesheet" href="commonheader.css">
+    <link rel="icon" href="thumnails/Technology_OrgL.jpg">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="grid-header">
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="content-title">
+            <h2> Technology Dashboards </h2>
+            <p>
+                Explore a wide range of Data Visualizations related to technology innovations,
+                advancements, and global tech trends across various industries and regions.
+                Our platform offers compelling visual insights into emerging technologies,
+                AI development, cybersecurity, and tech-driven economies, helping you understand
+                the impact of digital transformation, technological disruption, and future trends
+                shaping the modern world.
+            </p>
+        </div>
+
+        <!-- Flexbox for two inline examples -->
+        <div class="eco-example">
+
+            <!-- Example 1 -->
+            <div class="eco-visualization">
+                <h3 class="fancy-heading">India's Export of Electronic Commodity (2021-2022) </h3>
+                <p class="description">
+                    The visualization shows India's export and re-export of electronic
+                    commodities for the fiscal year 2021-2022. It highlights the export
+                    values of various electronic goods such as SIM cards, aerials, set-top boxes,
+                    and mobile phones, with a total export value of ₹4,445.65 crore. Commodities
+                    like SIM cards and aerial products dominate the export chart, while other items
+                    contribute smaller amounts.A slicer has been added to filter the data by specific
+                    commodities, allowing users to explore the export figures of individual electronic
+                    goods in greater detail.
+                </p>
+
+                <div class="iframe-container">
+                    <div class="loader">
+                        <img src="images/LoaderImg.webp" alt="Loading...">
+                    </div>
+                    <iframe width="600" height="450"
+                        src="https://lookerstudio.google.com/embed/reporting/1e01bfe3-400b-4958-9fdb-59da3901389c/page/hscEE"
+                        frameborder="0" style="border:0" allowfullscreen
+                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                        onload="iframeLoaded(this)">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Example 2 -->
+            <div class="eco-visualization">
+                <h3 class="fancy-heading">India's Import Electronic Commodity (2021-2022)</h3>
+                <p class="description">
+                    The visualization shows India's import and re-import of electronic
+                    commodities for the fiscal year 2021-2022. It presents the total import
+                    value of various electronic products, with items like mobile phones,
+                    SIM cards, and other telecommunications equipment contributing significantly
+                    to the overall import value of ₹122,356.31 crore.A slicer has been added to filter
+                    the data by specific commodities, allowing users to explore detailed import figures
+                    for individual electronic goods.
+                </p>
+
+                <div class="iframe-container">
+                    <div class="loader">
+                        <img src="images/LoaderImg.webp" alt="Loading...">
+                    </div>
+                    <iframe width="600" height="450"
+                        src="https://lookerstudio.google.com/embed/reporting/fc014718-a270-49ab-bb68-4036884b3f1d/page/5vXEE"
+                        frameborder="0" style="border:0" allowfullscreen
+                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                        onload="iframeLoaded(this)">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="technology.html">Page 1</a>
+            <a href="TechnologyPage2.html">Page 2</a>
+            <a href="#TechnologyPage3">Page 3</a>
+        </div>
+    </nav>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
+                express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific
+                direction
+                to the original content.
+                <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink"
+                    href="https://vodaw.org/">https://vodaw.org/</a> (the "Site") is for general informational purposes
+                only. All information on the Site is provided in good faith, however, we make no representation or
+                warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability,
+                availability, or completeness of any information on the Site.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+
+        // Function to handle iframe loading
+        function iframeLoaded(iframe) {
+            var container = iframe.parentNode;
+            container.classList.add('iframe-loaded'); // Show iframe and hide loader
+        }
+
+        // Smooth scroll JavaScript
+        document.getElementById('logo-id').addEventListener('click', function () {
+            window.open('index.html', '_blank'); // Opens the Law page in a new tab
+        });
+
+        
+
+    </script>
+</body>
+
+</html>

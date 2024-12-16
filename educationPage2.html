@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - VODAW</title>
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="commonFooter.css">
+    <link rel="stylesheet" href="commonheader.css">
+    <link rel="icon" href="thumnails/Education_OrgL.jpg">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header (unchanged) -->
+    <header class="grid-header">
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <div class="logo-space">
+            <!-- Placeholder for logo -->
+            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
+        </div>
+    </header>
+
+
+    <section class="content">
+        <div class="content-title">
+            <h2>Education Dashboards</h2>
+            <p>
+                Explore various Dashboards related to education trends,
+                policies, and systems across different regions and levels.
+                Our platform provides insightful visualizations that help you
+                understand student performance, educational access, and
+                key indicators in the world of education. From global literacy
+                rates to sector-specific developments, we bring the data to life
+                through visually engaging and interactive displays, making complex
+                educational data accessible and easy to comprehend.
+            </p>
+        </div>
+        <!-- Flexbox for two inline examples -->
+        <div class="edu-example">
+
+
+
+            <!-- Example 3 -->
+            <div class="edu-visualization">
+                <h3 class="fancy-heading">National & State Universities in India
+                </h3>
+
+                <p class="description">
+                    This dashboard on "National & State Universities in India" offers an intuitive way to explore
+                    and analyze data related to different types of universities across the country. It categorizes
+                    universities into groups like Central Universities, State Public Universities, and Deemed
+                    Universities,
+                    allowing users to easily filter and view specific categories. The dashboard provides a state-wise
+                    distribution
+                    of universities, where users can interact with the visual elements to see the number of institutions
+                    in each state.
+                    Users can compare university types across different states using charts and other visual aids. By
+                    clicking on various
+                    charts and filters, users can dynamically adjust the data presented to focus on their specific areas
+                    of interest.
+                    This makes it simple for users to understand the higher education landscape in India.
+                </p>
+
+                <iframe width="600" height="450"
+                    src="https://lookerstudio.google.com/embed/reporting/ad3405aa-90e8-40de-bf9e-198201ec817d/page/wfeGE"
+                    frameborder="0" style="border:0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+
+            </div>
+
+            <!-- Example 4 -->
+            <div class="edu-visualization">
+                <h3 class="fancy-heading">Enrolment through Distance Mode at Different Levels
+                </h3>
+
+                <p class="description">
+                    This dashboard presents state-wise enrollment data for undergraduate (UG), diploma, and postgraduate
+                    diploma (PG-Diploma)
+                    levels, separated by gender for each state or union territory in 2021-22. The top section shows
+                    enrollment figures at the UG level,
+                    with the distribution of male and female students displayed as stacked bar charts for each state.
+                    Similarly, the middle
+                    section represents diploma-level enrollments, and the bottom section focuses on PG-Diploma levels.
+                    The blue bars indicate
+                    male enrollments, while the pink bars represent female enrollments, allowing for a clear comparison
+                    of gender distribution
+                    across different educational levels and states. Users can easily identify the total enrollment
+                    figures and gender proportion
+                    in each category by observing the respective bars.
+                </p>
+
+                <iframe width="600" height="450"
+                    src="https://lookerstudio.google.com/embed/reporting/c6e55efe-7117-4b61-b0f3-a1de443d22f8/page/oVfGE"
+                    frameborder="0" style="border:0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <aside class="dashboard-note">
+        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
+    </aside>
+      
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="education.html">Page 1</a>
+            <a class="Page2" href="educationPage2.html">Page 2</a>
+            <a href="#educationpage3.html">Page 3</a>
+
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
+                express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided
+                that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific
+                direction
+                to the original content.
+                <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink"
+                    href="https://vodaw.org/">https://vodaw.org/</a> (the "Site") is for general informational
+                purposes only. All information on the Site is provided in good faith, however, we make no
+                representation or warranty of any kind, express or implied, regarding the accuracy, adequacy,
+                validity, reliability, availability, or completeness of any information on the Site.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.getElementById('logo-id').addEventListener('click', function () {
+            window.open('index.html', '_blank'); // Opens the Law page in a new tab
+        });
+
+        // Function to handle iframe loading
+        function iframeLoaded(iframe) {
+            var container = iframe.parentNode;
+            container.classList.add('iframe-loaded'); // Show iframe and hide loader
+        }
+
+    </script>
+</body>
+
+</html>

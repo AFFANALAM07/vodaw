@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - VODAW</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="commonFooter.css">
+    <link rel="stylesheet" href="commonheader.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="grid-header">
+        <div class="logo-space">
+            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
+        </div>
+        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <div class="logo-space">
+            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
+        </div>
+    </header>
+    <h1 class="services-heading">Our Services</h1>
+    <div class="services-section">
+        
+      
+        <!-- Navigation for Services -->
+        <div class="services-navigation">
+          <div class="service-option active" onclick="showService(0)"> Dashboard Creation</div>
+          
+          <div class="service-option" onclick="showService(1)">Organization's Dashboard </div>
+        </div>
+      
+        <!-- Services Content -->
+        <div class="services-content">
+          <div class="service-detail active">
+            <p>
+                We specialize in creating powerful, visually
+                engaging dashboards tailored to your needs. Whether 
+                comparing performance metrics, tracking key indicators, 
+                or visualizing complex data, our dashboards 
+                make it easy to understand and act on any type of data. 
+                With real-time updates and intuitive designs, 
+                you'll be able to make informed decisions faster.
+                below is a reference dashboards that provides comparisons
+                of top companies, which you can use to enhance your research, 
+                articles, or presentations with clear, data-driven insights.
+            </p>
+            <iframe 
+              src="https://lookerstudio.google.com/embed/reporting/a70712f4-1dce-439c-8117-aee82b0534a6/page/SECYE" 
+              width="100%" 
+              height="560" 
+              frameborder="0" 
+              allowfullscreen 
+              style="border: 0;" 
+              sandbox="allow-scripts allow-same-origin allow-popups">
+            </iframe>
+            
+          </div>
+          
+
+          <div class="service-detail">
+
+            <h3>We Can Create Dashboards Like This for You!</h3>
+            <p> Looking for insightful, visually appealing dashboards? 
+                We specialize in creating dynamic dashboards like this one, 
+                featuring key business metrics, growth trends, category-level performance, 
+                employee insights, and inventory analysis. Our customized dashboards 
+                turn raw data into actionable insights, helping organizations make 
+                data-driven decisions with ease. Let us bring your data to life!
+            </p>
+            <iframe 
+                width="100%" height="560" 
+                src="https://lookerstudio.google.com/embed/reporting/6c0b8c07-2ef0-4d0f-b6c3-0ea8ef00382c/page/PoxYE" 
+                frameborder="0" style="border:0" 
+                allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+            </iframe>
+          </div>
+        </div>
+    </div>
+      
+      
+    
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="mailto:dataanditsolutions@vodaw.org?subject=Service Type - Inquiry" 
+                title="Please click on this button to reach out to us and drop an email and your service type in the email subject.
+                or You Can Fill the Contact Form From HomePage"
+                class="email-link">
+                    Contact
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved.</p>
+            <p>
+                <span class="disclaimer">Disclaimer:</span> Unauthorized use or duplication of this material without express and written permission from this site's owner is strictly prohibited. 
+                Excerpts and links may be used, provided that full credit is given to VISUALISATION OF DATA AROUND THE WORLD (VODAW) with appropriate and specific direction to the original content.
+                <br>The information provided by VODAW ("we," "us," or "our") on 
+                <a class="footerlink" href="https://vodaw.org/">https://vodaw.org/</a> (the "Site") is for general informational purposes only. 
+                All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, 
+                regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.getElementById('logo-id').addEventListener('click', function () {
+            window.open('index.html', '_blank'); // Opens the Law page in a new tab
+        });
+        
+        function showService(index) {
+            const serviceOptions = document.querySelectorAll('.service-option');
+            const serviceDetails = document.querySelectorAll('.service-detail');
+
+            // Remove active class from all options and details
+            serviceOptions.forEach(option => option.classList.remove('active'));
+            serviceDetails.forEach(detail => detail.classList.remove('active'));
+
+            // Add active class to selected option and corresponding detail
+            serviceOptions[index].classList.add('active');
+            serviceDetails[index].classList.add('active');
+        }
+
+    </script>
+</body>
+</html>

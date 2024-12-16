@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+}
+
+.main-heading{
+    font-family: Playfair Display, Georgia, Times New Roman, "Liberation Serif", serif;
+    margin: 0;
+    padding-left: 120px;
+    font-size: 1.1rem;
+    line-height: .5;
+    padding-top: 30px;
+    color: #ff4b16;
+}
+.main-heading h1{
+    margin: 0;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Background for visibility */
+    padding: 0px 50px; /* Inner spacing */
+}
+
+.dashboards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    
+}
+
+
+.dashboards-box > section {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #bfbfbf;
+    padding: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.dashboards-box > section:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #7e7e7e; 
+    
+}
+
+.dashboard-image {
+   
+    width: 100%; /* Responsive image size */
+    height: 300px;/* Optional: Limit height */
+    object-fit: cover; /* Ensure the image fits without distortion */ /* Space between the image and text */
+}
+
+.dashboards-box h3{
+    font-size: 1.4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.seemore{
+    text-decoration: underline;
+    color: blue;
+}
+
+.pagination {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.pagination .page-numbers {
+    background-color: #666666;
+    box-shadow: 0 0 1px #0000001a;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Lato, Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.pagination .page-numbers.current, .pagination .page-numbers:hover {
+    color: #fff;
+    background: #ff4b16;
+}
+.dashboards10 img{
+    height: fit-content;
+}
+
+.dashboards9 img{
+    height: fit-content;
+}
+
+.dashboards9 h3 {
+    margin-top: 35px;
+}
+.dashboards12 p{
+    text-align: center;
+    padding-top:  50%;
+    font-size: 2rem;
+}
+.dashboards11 h3 {
+    margin-top: 105px;
+}

@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3f4f6, #dfe4ea);
+    color: #333;
+}
+
+.career-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Job Openings Section */
+.job-openings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.job {
+    background: #f9fafb;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.job h2 {
+    color: #fe8308;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.job p {
+    margin: 0.5rem 0;
+}
+
+.job ul {
+    padding-left: 1.2rem;
+    margin: 1rem 0;
+}
+
+.job li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Apply Button */
+.apply-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #fe8308;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.apply-button:hover {
+    background: #633100
+}
