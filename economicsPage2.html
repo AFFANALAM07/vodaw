@@ -140,6 +140,10 @@
 
     <script>
 
+        document.getElementById('logo-id').addEventListener('click', function () {
+                        window.open('index.html', '_blank'); // Opens the Law page in a new tab
+                    });
+
         document.querySelectorAll('.hover-video').forEach(video => {
             video.addEventListener('mouseenter', function () {
                 video.play(); // Play video on hover
@@ -148,9 +152,7 @@
             video.addEventListener('mouseleave', function () {
                 video.pause(); // Pause video when mouse leaves
             });
-            document.getElementById('logo-id').addEventListener('click', function () {
-                window.open('index.html', '_blank'); // Opens the Law page in a new tab
-            });
+            
         });
         // Function to handle iframe loading
         function iframeLoaded(iframe) {
