@@ -122,6 +122,20 @@ nav {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+nav a.Page1 {
+    background-color: #007BFF;
+    color: white;
+}
+
+nav a.Page2 {
+    background-color: #007BFF;
+    color: white;
+}
+
+nav a.Page3 {
+    background-color: #007BFF;
+    color: white;
+}
 
 .nav-left a:hover {
     background-color: #007BFF;
