@@ -79,7 +79,7 @@ body {
     font-weight: bolder;
     color: #000000;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     position: relative;
     text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
     margin: 0;
