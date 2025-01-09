@@ -226,3 +226,97 @@ nav a.Page3 {
 .nav-left {
     position: relative;
 }
+
+
+/* Mobile-first approach */
+@media only screen and (max-width: 768px) {
+    /* General body and layout adjustments */
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header adjustments */
+    .grid-header {
+        display: flex;
+        
+    }
+    
+
+    .grid-header img {
+        width: 10px;
+        height: auto;
+        margin: 10px;
+        align-items: center;
+        }  
+    
+
+    .grid-header h1 {
+        display: none;
+        
+    }
+
+    /* Content adjustments */
+    .content {
+        padding: 10px;
+    }
+
+    .content-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .content-title p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Adjust visualization containers */
+    .edu-example {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .edu-visualization {
+        width: 100%;
+    }
+
+    .edu-visualization iframe {
+        width: 100%;
+        height: 250px; /* Adjust as per design preference */
+    }
+
+    /* Navigation adjustments */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .footer-content .footerlink {
+        display: block;
+        margin: 5px 0;
+    }
+}
+

@@ -144,21 +144,24 @@
                 window.open('index.html', '_blank'); // Opens the Law page in a new tab
             });
             
-            document.querySelectorAll('.hover-video').forEach(video => {
-                video.addEventListener('mouseenter', function() {
-                video.play(); // Play video on hover
-            });
-
-            video.addEventListener('mouseleave', function() {
-                 video.pause(); // Pause video when mouse leaves
-            });
-            
-            });
             // Function to handle iframe loading
             function iframeLoaded(iframe) {
                 var container = iframe.parentNode;
                 container.classList.add('iframe-loaded'); // Show iframe and hide loader
             }
+
+            function adjustIframes() {
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                if (window.innerWidth < 768) {
+                    iframe.style.width = '100%';
+                    iframe.style.height = '300px';
+                } else {
+                    iframe.style.width = '600px';
+                    iframe.style.height = '450px';
+                }
+            });
+        }
 
     </script>
 </body>
