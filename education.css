@@ -59,7 +59,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    max-width: 45%;
+    max-width: 70%;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
@@ -95,6 +95,17 @@ body {
     padding: 0px 40px;
 }
 
+.description strong{
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.description span{
+    color: red;
+    font-weight: bolder;
+}
+
 .dashboard-note {
     background-color: #f9f9f9;
     border-left: 4px solid #ff7a00;
@@ -126,7 +137,7 @@ nav {
 }
 
 /* Left Section */
-.nav-left {
+nav {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -135,7 +146,7 @@ nav {
 
 }
 
-.nav-left a {
+nav a {
     text-decoration: none;
     color: #007BFF;
     background-color: white;
@@ -160,14 +171,19 @@ nav a.Page3 {
     color: white;
 }
 
-.nav-left a:hover {
+nav a.Page4{
     background-color: #007BFF;
     color: white;
-    transform: scale(1.1);
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.2);
     /* Smooth scaling effect */
 }
 
 
-.nav-left {
+nav {
     position: relative;
 }
