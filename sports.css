@@ -159,6 +159,11 @@ nav {
   /* Smooth scaling effect */
 }
 
+nav a.Page1 {
+  background-color: #007BFF;
+  color: white;
+}
+
 
 .nav-left {
   position: relative;

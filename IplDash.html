@@ -6,6 +6,7 @@
     <title>IPL Dashboard</title>
     <link rel="stylesheet" href="Ipldash.css">
     <link rel="icon" href="images/wp7104495.webp">
+    <link rel="stylesheet" href="commonFooter.css">
 </head>
 <body>
     <header>
@@ -35,23 +36,59 @@
         <section class="content" id="batting">
             <h3>Batting Records</h3>
             <p>
-                Explore the standout indvidual batting performances in IPL history 
-                of players.  This dashboard allows You to search for any 
+                Explore the standout individual batting performances in IPL history 
+                of players. This dashboard allows you to search for any 
                 IPL player with a minimum of 400 career runs and 
                 view detailed records, including the teams they’ve 
-                played for, their career span, total runs, strike rate and other Stats.
-        
+                played for, their career span, total runs, strike rate, and other stats.
             </p>
-            <div class="iframe-container">
-                <iframe 
-                    src="https://lookerstudio.google.com/embed/reporting/f0c92442-0e14-443d-92c9-85048f15196a/page/qbfcE" 
-                    frameborder="0" 
-                    allowfullscreen 
-                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-                </iframe>
-            </div>
-            
+        
+            <!-- Desktop iframe -->
+            <iframe 
+                class="iframe-desktop"
+                width="800" 
+                height="565"
+                src="https://lookerstudio.google.com/embed/reporting/f0c92442-0e14-443d-92c9-85048f15196a/page/qbfcE" 
+                frameborder="0" 
+                allowfullscreen 
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+            </iframe>
+        
+            <!-- Mobile iframe -->
+            <iframe 
+                class="iframe-mobile"
+                width="350" 
+                height="242"
+                scrolling ="no"
+                src="https://lookerstudio.google.com/embed/reporting/f0c92442-0e14-443d-92c9-85048f15196a/page/mobileView" 
+                frameborder="0" 
+                allowfullscreen 
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+            </iframe>
         </section>
+        
+        
     </main>
+
+    <nav class="second-nav">
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="sports.html">Page 1</a>
+            <a class="Page2" href="IplDash.html">Page 2</a>
+            <a href="#SportsPage3">Page 3</a>
+        </div>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction
+                to the original content.
+            <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink" href="https://vodaw.org/">https://vodaw.org/</a>  (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. </p>
+        </div>
+    </footer>
+    
 </body>
 </html>

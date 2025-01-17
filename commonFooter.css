@@ -1,37 +1,65 @@
 /* Footer Styling */
 .footer {
-    background-color: #fe7b01;
-    color: #ffffff;
-    padding: 15px;
-    
+  background-color: #fe7b01;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.footer-content {
+  margin: 0 auto;
+}
+
+.disclaimer {
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.footer p {
+  margin: 5px 0;
+  text-align: left;
+  line-height: 20px;
+  font-size: 15px;
+  padding: 0px 70px;
+}
+
+p.copyright {
+  text-align: center;
+  font-size: 17px;
+}
+
+.footerlink {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* Mobile Footer Styling */
+@media (max-width: 768px) {
+  .footer {
+      padding: 10px; /* Reduce padding for smaller screens */
   }
-  
-  .footer-content {
-    margin: 0 auto;
-  }
-  
-  .disclaimer {
-    font-weight: bold;
-    line-height: 15px;
-  }
-  
+
   .footer p {
-    margin: 5px 0;
-    text-align:left;
-    line-height: 20px;
-    font-size: 15px;
-    padding: 0px 70px;
+      font-size: 14px; /* Slightly smaller font */
+      padding: 0px 20px; /* Reduce padding for a more compact layout */
+      text-align: justify; /* Center-align text for better readability */
   }
-  
+
+  .disclaimer {
+      font-size: 13px; /* Smaller font for disclaimers */
+      text-align: center; /* Center-align disclaimers */
+      line-height: 18px; /* Adjust line height */
+  }
+
   p.copyright {
-    text-align: center;
-    font-size: 17px;
+      font-size: 16px; /* Reduce font size for copyrights */
+      margin-top: 10px;
+      text-align: center;
   }
-  
+
   .footerlink {
-    color: white;
-    font-weight: bolder;
-    text-decoration: underline ;
-    font-style: italic;
-    font-size: 16px;
+      font-size: 14px; /* Slightly smaller font for links */
   }
+}

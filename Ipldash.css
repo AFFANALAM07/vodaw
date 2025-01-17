@@ -188,7 +188,9 @@ nav a.vs{
 .content {
     text-align: center;
     padding: 5px;
-    background-color: rgb(18 41 75)
+    background-color: rgb(18 41 75);
+    align-items: center;
+    justify-content: center;
 }
 
 .content h3 {
@@ -203,47 +205,42 @@ nav a.vs{
     margin-bottom: 10px;
 }
 
-/* Container to maintain aspect ratio */
-
-.iframe-container {
-    position: absolute;
-    width: 51%;
-    height: 72%; 
-    margin-top: 25px;  
+/* Center the content section */
+#batting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
 }
 
-/* Responsive iframe */
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
+/* Default styles: hide mobile iframe */
+.iframe-mobile {
+    display: none;
 }
 
+/* Show desktop iframe for screens wider than 768px */
+@media (min-width: 769px) {
+    .iframe-desktop {
+        display: block;
+    }
+    .iframe-mobile {
+        display: none;
+    }
+}
 
-
+/* Show mobile iframe for screens 768px or narrower */
 @media (max-width: 768px) {
-    /* Center and adjust iframe container */
-    .iframe-container {
-        position: absolute;
-        width: 90%;
-        height: 34%; 
-        margin-top: 25px;  
+    .iframe-desktop {
+        display: none;
     }
-    
-    /* Responsive iframe */
-    .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 5%;
-        width: 100%;
-        height: 100%;
-        border: 1px solid black;
-        overflow: hidden;
+    .iframe-mobile {
+        display: block;
     }
 }
+
+
+
 
 
 /* Responsive Design */
@@ -304,7 +301,8 @@ nav a.vs{
     .content p {
         font-size: .8em;
         color: #ffffff;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
 
     /* Stylish iframe container */
@@ -340,3 +338,72 @@ nav a.vs{
         width: 50%;
     }
 }
+
+
+/* Styling specifically for the second navigation bar */
+.second-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #d7d7d7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    }
+
+/* Links in the second nav */
+.second-nav .nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.second-nav .nav-left a {
+    text-decoration: none;
+    color: #007BFF;
+    background-color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.second-nav .nav-left a:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.1);
+}
+.second-nav a.Page2{
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Responsive styling for the second navigation */
+@media (max-width: 768px) {
+    .second-nav {
+        flex-direction: row; /* Keep the nav in a row */
+        justify-content: center; /* Center-align the row */
+        align-items: center; /* Align items in the middle vertically */
+        flex-wrap: wrap; /* Allow wrapping if there isn't enough space */
+    }
+
+    .second-nav .nav-left {
+        flex-direction: row; /* Keep links in a row */
+        gap: 10px; /* Spacing between links */
+        width: 100%; /* Ensure links span the full width of the container */
+        justify-content: center; /* Center-align links inside the container */
+    }
+
+    .second-nav .nav-left a {
+        text-align: center;
+        width: calc(100% / 3); /* Divide space evenly (3 items per row) */
+        max-width: 150px; /* Optional: Set a maximum width for links */
+        padding: 10px 0; /* Add vertical padding for better appearance */
+        box-sizing: border-box; /* Include padding in width calculation */
+        flex-grow: 1; /* Ensure all links grow equally */
+    }
+}
+
+
