@@ -184,6 +184,12 @@ nav a.vs{
     border-color: #ff7a00;
 }
 
+nav a.venue{
+    background: #ff7a00;
+    color: #fff;
+    border-color: #ff7a00;
+}
+
 /* Content Section */
 .content {
     text-align: center;
@@ -245,11 +251,7 @@ nav a.vs{
 
 /* Responsive Design */
 /* Hide the "Venue" link on mobile devices */
-@media (max-width: 768px) {
-    .nav-menu li:nth-child(4) a {
-        display: none;
-    }
-}
+
 
 @media (max-width: 768px) {
 
@@ -261,36 +263,26 @@ nav a.vs{
     }
     /* Stylish navigation menu */
     .nav-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1px; /* Adds space between items */
-        max-width: 100%; /* Adjust to screen size */
-        padding: 10px 25px;
-        border: none;
+        flex-direction: row; /* Keep links in a row */
+        gap: 10px; /* Spacing between links */
+        width: 100%; /* Ensure links span the full width of the container */
+        justify-content: center;
     }
 
-    .nav-menu li {
-        width: 100%;
-    }
+   
 
     .nav-menu a {
-        text-decoration: none;
-        color:#ff7a00;
-        font-size: 1em;
-        font-weight: bold;
+        font-size: 15PX;
         text-align: center;
-        display: block;
-        border: 1px solid black;
-        padding: 10px 15px;
-        
-        transition: transform 0.3s, background 0.3s;
+        width: calc(100% / 3); /* Divide space evenly (3 items per row) */
+        max-width: 150px; /* Optional: Set a maximum width for links */
+        padding: 10px 0; /* Add vertical padding for better appearance */
+        box-sizing: border-box; /* Include padding in width calculation */
+        flex-grow: 1; /* Ensure all links grow equally */
+        flex-wrap: wrap;
     }
 
-    .nav-menu a:hover {
-        background: #e66900;
-        transform: scale(1.05); /* Slight zoom effect */
-    }
+    
 
     .content h3 {
         font-size: 1.8em;
