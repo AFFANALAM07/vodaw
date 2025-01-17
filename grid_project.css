@@ -209,6 +209,79 @@ nav {
     }
   }
   
+  .running-bar {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color:#ff4c05;
+    color: white;
+    overflow: hidden; /* Ensure no overflow */
+    display: flex;
+    align-items: center;
+  }
+  
+  .running-bar .content {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .running-bar p {
+    margin: 0;
+    padding: 0 50px; /* Add spacing between repeated content */
+    font-size: 20px;
+  }
+
+  .running-bar p a {
+    color: white;
+    font-weight: bolder;
+  }
+  
+  /* Pause animation on hover */
+  .running-bar:hover .content {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(150%); /* Start from the initial position */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left by one full width */
+    }
+  }
+
+  @media (max-width: 768px) { /* For tablets and smaller devices */
+    .running-bar {
+      height: 40px; /* Slightly smaller height */
+    }
+
+    .running-bar p {
+      font-size: 16px; /* Adjust font size */
+      padding: 0 30px; /* Reduce spacing between repeated content */
+    }
+
+    .running-bar .content {
+      animation: scroll 15s linear infinite; /* Slower scrolling for better visibility */
+    }
+  }
+
+  @media (max-width: 480px) { /* For mobile phones */
+    .running-bar {
+      height: 35px; /* Compact height for small screens */
+    }
+
+    .running-bar p {
+      font-size: 14px; /* Smaller font size for mobile */
+      padding: 0 20px; /* Reduce spacing even further */
+    }
+
+    .running-bar .content {
+      animation: scroll 20s linear infinite; /* Even slower for small screens */
+    }
+  }
   
 
 /* Grid Container Styling */
