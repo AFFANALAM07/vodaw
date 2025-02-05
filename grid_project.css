@@ -65,9 +65,7 @@ header h1 {
   text-align: left;
   
 }
-.mbtitle{
-  display: none;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -447,22 +445,6 @@ nav {
   }
 }
 
-.topic-headings {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  padding: 10px 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
-  display: inline-block;
-  margin: 20px auto;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-  animation: glow 2s infinite alternate;
-}
 
 /* Glowing Effect */
 @keyframes glow {
@@ -474,15 +456,6 @@ nav {
   }
 }
 
-/* Centering the Heading */
-.topic-headings {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 /* Grid Container Styling */
@@ -493,10 +466,32 @@ nav {
   row-gap: 30px;
   margin: 30px 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 15px;
   background-color: white;
 
 }
+
+/* Centering the Heading */
+.grid2 h1 {
+  grid-column: 1 / -1; /* Makes h1 span all columns */
+  text-align: center; /* Centers the text */
+  margin-bottom: 5px; /* Adds space below */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+  display: inline-block;
+ 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  animation: glow 2s infinite alternate;
+}
+
 
 /* Styling for Subgrid Items */
 .subgrid {
