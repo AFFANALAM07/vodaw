@@ -11,20 +11,20 @@
 
 .disclaimer {
   font-weight: bold;
-  line-height: 15px;
+  line-height: 1em;
 }
 
 .footer p {
   margin: 5px 0;
   text-align: left;
   line-height: 20px;
-  font-size: 15px;
+  font-size: .8em;
   padding: 0px 70px;
 }
 
 p.copyright {
   text-align: center;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 .footerlink {
@@ -42,13 +42,13 @@ p.copyright {
   }
 
   .footer p {
-      font-size: 14px; /* Slightly smaller font */
+      font-size: .875em; /* Slightly smaller font */
       padding: 0px 20px; /* Reduce padding for a more compact layout */
       text-align: justify; /* Center-align text for better readability */
   }
 
   .disclaimer {
-      font-size: 13px; /* Smaller font for disclaimers */
+      font-size: 1em; /* Smaller font for disclaimers */
       text-align: center; /* Center-align disclaimers */
       line-height: 18px; /* Adjust line height */
   }

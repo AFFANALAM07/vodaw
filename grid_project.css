@@ -295,11 +295,14 @@ nav {
   }
 
   .dropdown-content a:hover {
-      background-color: gray /* Hover effect for dropdown items */
+      background-color: gray ;
+      
+     
   }
 
   .dropdown:hover .dropdown-content {
       display: block;
+      color: white;
   }
 
   /* Search container adjustments */
@@ -485,7 +488,6 @@ nav {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
   display: inline-block;
- 
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -793,7 +795,7 @@ nav {
   font-size: 2em;
   color: #fe8d11;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .review {
@@ -805,7 +807,7 @@ nav {
 }
 
 .review p {
-  font-size: 1em;
+  font-size: .94em;
   color: #333;
   margin: 0;
 }
