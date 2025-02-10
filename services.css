@@ -8,66 +8,71 @@ body {
   
 }
 
-/* Styling for the Header */
-.grid-header {
+/*HEADER */
+
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(135deg, #ffc107b3, #ff7a00);
-  text-align: center;
-}
-
-.logo-space {
-  flex: 0 0 auto;
+  padding: 5px;
+  text-align: left;
+  flex-wrap: wrap;
+  /* Ensure wrapping for smaller screens */
 }
 
 .logo {
-  height: 124px; /* Set height */
-  width: 162px; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure proper fitting */
-  mix-blend-mode:multiply; /* Blend logo with background */
-  background-color: transparent; /* Ensure no separate background */
-  filter: brightness(1.5); /* Optional: Slightly adjust brightness */
+  height: auto;
+  width: 20vh;
+  /* Responsive logo size */
+  max-width: 100%;
+  /* Prevent logo from exceeding container width */
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  background-color: transparent;
+  filter: brightness(1.5);
   cursor: pointer;
 }
 
-.logo1 {
-  height: 124px; /* Set height */
-  width: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure proper fitting */
-  mix-blend-mode:multiply; /* Blend logo with background */
-  background-color: transparent; /* Ensure no separate background */
-  filter: brightness(1.2); /* Optional: Slightly adjust brightness */
-  padding: 0px 200px;
-}
-
-.grid-header h1 {
+header h1 {
   flex: 1;
-  text-align: left;
-  font-size: 2em; /* Large and prominent */
-  letter-spacing: 4px; /* Spaced for style */
-  margin: 0;
-  color: #ffffff; /* Clean white color */
-  font-family: 'Poppins', sans-serif; /* Modern and stylish font */
-  text-transform: uppercase; /* Uniform uppercase letters */
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  margin: 0 10px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  text-align: left;
   
 }
 
-/* Suggestion: Add some responsiveness for better handling on smaller screens */
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .grid-header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
+  header {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack header items vertically */
+    text-align: center; /* Center text */
   }
 
-  .logo-space {
-    margin-bottom: 10px;
-  }
+  header h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 1.6em; /* Reduce font size for smaller screens */
+    line-height: 1.2; /* Adjust line height for better readability */
+    margin-top: 5px; /* Add spacing between logo and heading */
 
-  .grid-header h1 {
-    font-size: 1.2em;
+  }
+  
+
+  .logo {
+    width: 140px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Add spacing below the logo */
   }
 }
 

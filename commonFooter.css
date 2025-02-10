@@ -2,7 +2,7 @@
 .footer {
   background-color: #fe7b01;
   color: #ffffff;
-  padding: 15px;
+  padding: 5px;
 }
 
 .footer-content {
@@ -35,6 +35,39 @@ p.copyright {
   font-size: 16px;
 }
 
+/* Social Media Section Styling */
+.social-media {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.social-media h3 {
+  font-size: 1.2em;
+ 
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons li a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #333; /* Change hover color as needed */
+}
+
 /* Mobile Footer Styling */
 @media (max-width: 768px) {
   .footer {
@@ -61,5 +94,14 @@ p.copyright {
 
   .footerlink {
       font-size: 14px; /* Slightly smaller font for links */
+  }
+
+  /* Mobile Social Media Styling */
+  .social-media h3 {
+      font-size: 1em; /* Smaller font for heading */
+  }
+
+  .social-icons li a {
+      font-size: 20px; /* Smaller icons for mobile */
   }
 }
