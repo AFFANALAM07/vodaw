@@ -199,6 +199,15 @@ main {
     .iframe-mobile {
         display: block;
     }
+    .dashboard {
+        margin: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        margin-left: 10px;
+        
+    }
 }
 
 /* Second Navigation */
