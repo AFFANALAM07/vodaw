@@ -25,7 +25,7 @@
     <link rel="icon" href="thumnails/Awards_OrgL.jpeg.jpg">
     <link rel="stylesheet" href="awards.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
+
 
     <!-- Structured Data for Rich Results -->
     <script type="application/ld+json">
@@ -47,38 +47,30 @@
 
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Award Dashboards</h2>
             <p>
                 Explore a diverse range of Dashboards related to awards and recognitions
-                across various fields. Our platform offers insightful visualizations 
-                that illuminate trends, statistics, and patterns in award distributions. 
-                By transforming complex data into engaging graphics, we help you understand the 
-                impact of awards on industries, demographics, and achievements, 
+                across various fields. Our platform offers insightful visualizations
+                that illuminate trends, statistics, and patterns in award distributions.
+                By transforming complex data into engaging graphics, we help you understand the
+                impact of awards on industries, demographics, and achievements,
                 making the information accessible and meaningful.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
+        </section>
+        <section class="content" id="AwardsPage3">
 
-            <!-- Example 1 -->
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Best Director in Academy (Oscars)</h3>
+            <div class="dashboard">
+                <h4>Best Director in Academy (Oscars)</h4>
                 <p class="description">
                     This Dashboard accompanying this content likely features 
                     an interactive dashboard that allows users to delve into 
@@ -89,19 +81,22 @@
                     Overall, the visualization would complement the narrative by providing 
                     a clear and engaging way to explore the rich history of the Academy Awards.
 
-                </p>  
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/46c02ae5-4e71-4d33-be83-550856bf706f/page/p_9x8952kood" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/46c02ae5-4e71-4d33-be83-550856bf706f/page/p_9x8952kood"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/46c02ae5-4e71-4d33-be83-550856bf706f/page/p_9x8952kood"
+                    frameborder="0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
             </div>
 
-             <!-- Example 2 -->
-
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Best Picture in Academy (Oscars)</h3>
+            <!-- Best Picture in Academy (Oscars) -->
+            <div class="dashboard">
+                <h4>Best Picture in Academy (Oscars)</h4>
                 <p class="description">
                     This Dashboard provide summary of 
                     Best Picture winners. Key elements include a timeline of winning films,
@@ -111,35 +106,30 @@
                     production name, making it easy to explore specific details or trends.
                     This analysis celebrates the legacy of the Oscars and highlights the 
                     contributions of various studios and filmmakers to the art of cinema. 
-                    
 
-
-                </p>   
-
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/de12367d-fe62-43f7-80ed-1b361e77a704/page/OeBcE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p> 
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/de12367d-fe62-43f7-80ed-1b361e77a704/page/OeBcE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/de12367d-fe62-43f7-80ed-1b361e77a704/page/OeBcE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-    <aside class="dashboard-note">
-        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
-    </aside>
-
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a  href="awards.html">Page 1</a>
-            <a  href="Awardspage2.html">Page 2</a>
+            <a href="awards.html">Page 1</a>
+            <a href="Awardspage2.html">Page 2</a>
             <a class="Page3" href="AwardsPage3.html">Page 3</a>
             <a href="AwardsPage4.html">Page 4</a>
-
+        </div>
     </nav>
 
     <!-- Footer -->

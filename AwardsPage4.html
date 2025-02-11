@@ -47,101 +47,101 @@
 
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
-
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Award Dashboards</h2>
             <p>
                 Explore a diverse range of Dashboards related to awards and recognitions
-                across various fields. Our platform offers insightful visualizations 
-                that illuminate trends, statistics, and patterns in award distributions. 
-                By transforming complex data into engaging graphics, we help you understand the 
-                impact of awards on industries, demographics, and achievements, 
+                across various fields. Our platform offers insightful visualizations
+                that illuminate trends, statistics, and patterns in award distributions.
+                By transforming complex data into engaging graphics, we help you understand the
+                impact of awards on industries, demographics, and achievements,
                 making the information accessible and meaningful.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
+        </section>
 
-            <!-- Example 1 -->
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Actors in a Leading Role in Academy (Oscars)</h3>
+        <section class="content" id="award">
+
+            <!--Actors in a Leading Role in Academy (Oscars)-->
+
+            <div class="dashboard">
+                <h4>Actors in a Leading Role in Academy (Oscars)</h4>
                 <p class="description">
                     This Academy Awards (Oscars) Dashboard provides insights into actors who 
                     have won the Best Actor in a Leading Role category. Users can explore the 
-                    \list of actors, see the films they won for, and view the release years. 
+                    list of actors, see the films they won for, and view the release years. 
                     The dashboard includes filters for actor names and award years, allowing 
                     users to refine the data and focus on specific individuals or time periods. 
                     For example, selecting Marlon Brando will display his Oscar-winning films, 
                     like The Godfather and On the Waterfront. This user-friendly dashboard helps 
                     users quickly discover Oscar winners and their associated films.
-                </p>  
-                    <iframe  
-                            width="600" height="450" 
-                            src="https://lookerstudio.google.com/embed/reporting/d878ff67-c3e2-478f-822a-1a97f51257cc/page/SdvCE" 
-                            frameborder="0" style="border:0" allowfullscreen 
-                             sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-                    </iframe>
-            </div>
-
-             <!-- Example 2 -->
-
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Actress in a Leading Role in Academy (Oscars)</h3>
-                <p class="description">
-                    This Academy Awards (Oscars) Dashboard provides insights into actors who 
-                    have won the Best Actor in a Leading Role category. Users can explore the 
-                    \list of actors, see the films they won for, and view the release years. 
-                    The dashboard includes filters for actor names and award years, allowing 
-                    users to refine the data and focus on specific individuals or time periods. 
-                    For example, selecting Marlon Brando will display his Oscar-winning films, 
-                    like The Godfather and On the Waterfront. This user-friendly dashboard helps 
-                    users quickly discover Oscar winners and their associated films.
-                </p>   
-
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/c3a3276b-4b25-445d-94cb-d8f5d936a1a7/page/iw0CE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p> 
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/d878ff67-c3e2-478f-822a-1a97f51257cc/page/SdvCE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/d878ff67-c3e2-478f-822a-1a97f51257cc/page/SdvCE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
-        </div>
-    </section>
+            <!-- Nobel Winners in Field of Economics -->
+            <div class="dashboard">
+                <h4>Actress in a Leading Role in Academy (Oscars)</h4>
+                <p class="description">
+                    This Academy Awards (Oscars) Dashboard provides insights into actors who 
+                    have won the Best Actor in a Leading Role category. Users can explore the 
+                    list of actors, see the films they won for, and view the release years. 
+                    The dashboard includes filters for actor names and award years, allowing 
+                    users to refine the data and focus on specific individuals or time periods. 
+                    For example, selecting Marlon Brando will display his Oscar-winning films, 
+                    like The Godfather and On the Waterfront. This user-friendly dashboard helps 
+                    users quickly discover Oscar winners and their associated films.
+                </p> 
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/c3a3276b-4b25-445d-94cb-d8f5d936a1a7/page/iw0CE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/c3a3276b-4b25-445d-94cb-d8f5d936a1a7/page/iw0CE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
 
-    <aside class="dashboard-note">
-        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
-    </aside>
 
-    <nav>
+    </main>
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a  href="awards.html">Page 1</a>
-            <a  href="Awardspage2.html">Page 2</a>
+            <a href="awards.html">Page 1</a>
+            <a href="Awardspage2.html">Page 2</a>
             <a href="AwardsPage3.html">Page 3</a>
             <a class="Page4" href="AwardsPage4.html">Page 4</a>
-
+        </div>
     </nav>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided
@@ -159,17 +159,9 @@
     </footer>
 
     <script>
-
         document.getElementById('logo-id').addEventListener('click', function () {
             window.open('index.html', '_blank'); // Opens the Law page in a new tab
         });
-
-        // Function to handle iframe loading
-        function iframeLoaded(iframe) {
-            var container = iframe.parentNode;
-            container.classList.add('iframe-loaded'); // Show iframe and hide loader
-        }
-
     </script>
 </body>
 

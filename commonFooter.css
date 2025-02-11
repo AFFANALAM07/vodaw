@@ -77,7 +77,7 @@ p.copyright {
   .footer p {
       font-size: .875em; /* Slightly smaller font */
       padding: 0px 20px; /* Reduce padding for a more compact layout */
-      text-align: justify; /* Center-align text for better readability */
+      text-align: left; /* Center-align text for better readability */
   }
 
   .disclaimer {
