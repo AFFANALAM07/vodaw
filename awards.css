@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /*HEADER */
 
 header {
@@ -16,9 +17,9 @@ header {
     text-align: left;
     flex-wrap: wrap;
     /* Ensure wrapping for smaller screens */
-  }
-  
-  .logo {
+}
+
+.logo {
     height: auto;
     width: 20vh;
     /* Responsive logo size */
@@ -29,9 +30,9 @@ header {
     background-color: transparent;
     filter: brightness(1.5);
     cursor: pointer;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     flex: 1;
     font-size: 1.7em;
     letter-spacing: 2px;
@@ -42,38 +43,46 @@ header {
     text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
     word-wrap: break-word;
     text-align: left;
-    
-  }
-  
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; /* Stack header items vertically */
-      text-align: center; /* Center text */
-    }
-  
-    header h1 {
-      justify-content: center;
-      align-items: center;
-      text-align: center; 
-      font-size: 1.6em; /* Reduce font size for smaller screens */
-      line-height: 1.2; /* Adjust line height for better readability */
-      margin-top: 5px; /* Add spacing between logo and heading */
-  
-    }
-    
-  
-    .logo {
-      width: 140px; /* Set a fixed width for the logo */
-      height: auto; /* Maintain aspect ratio */
-      margin-bottom: 5px; /* Add spacing below the logo */
-    }
-  }
 
-  /* Main Content */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* Stack header items vertically */
+        text-align: center;
+        /* Center text */
+    }
+
+    header h1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.6em;
+        /* Reduce font size for smaller screens */
+        line-height: 1.2;
+        /* Adjust line height for better readability */
+        margin-top: 5px;
+        /* Add spacing between logo and heading */
+
+    }
+
+
+    .logo {
+        width: 140px;
+        /* Set a fixed width for the logo */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-bottom: 5px;
+        /* Add spacing below the logo */
+    }
+}
+
+/* Main Content */
 main {
     padding: 0px;
 }
@@ -82,14 +91,16 @@ main {
 .intro {
     text-align: center;
     padding: 3px;
-    background: linear-gradient(270deg, #c37596, #0e3119); /* Vibrant gradient */
+    background: linear-gradient(270deg, #c37596, #0e3119);
+    /* Vibrant gradient */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .intro h2 {
     font-size: 1.7em;
-    color: #fff; /* Bright text color */
+    color: #fff;
+    /* Bright text color */
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
@@ -105,7 +116,7 @@ main {
     margin-bottom: 5px;
     margin: 5px;
     text-align: left;
-    
+
 }
 
 /* Animation for fade-in and slide-in */
@@ -113,6 +124,7 @@ main {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -122,10 +134,12 @@ main {
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0);
     }
 }
+
 /* Content Styling */
 .content {
     display: flex;
@@ -134,7 +148,7 @@ main {
     padding: 25px;
     background-color: rgb(197, 197, 197);
     align-items: center;
-    
+
 }
 
 .dashboard {
@@ -143,7 +157,7 @@ main {
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid black;
-    
+
 }
 
 .dashboard h4 {
@@ -156,9 +170,9 @@ main {
 .dashboard p {
     font-size: 1em;
     color: #181818;
-    
+
     text-align: justify;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .iframe-desktop {
@@ -166,8 +180,9 @@ main {
     margin: 20px auto;
     width: 800px;
     height: 600px;
-    
+
 }
+
 /* Default styles: hide mobile iframe */
 .iframe-mobile {
     display: none;
@@ -179,6 +194,7 @@ main {
     .iframe-desktop {
         display: flex;
     }
+
     .iframe-mobile {
         display: none;
     }
@@ -189,9 +205,13 @@ main {
     .iframe-desktop {
         display: none;
     }
+
     .iframe-mobile {
         display: block;
     }
+
+    
+
     .dashboard {
         margin: 10px;
         padding: 10px;
@@ -199,7 +219,14 @@ main {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border: 1px solid black;
 
-        
+
+    }
+    .dashboard h4{
+        font-size: 1em;
+    }
+    .dashboard p{
+        font-size: .875em;
+        text-align: left;
     }
 }
 
@@ -301,4 +328,3 @@ aside strong {
         padding: 12px;
     }
 }
-
