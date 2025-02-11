@@ -33,29 +33,31 @@
         <link rel="icon" href="thumnails/Agriculture_OrgL.jpeg.jpg">
     </head>
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
+            <h2>Agriculture Dashboards</h2>
+            <p>
+                Explore various datasets related to agriculture,
+                farming practices, and crop production around the world.
+                We provide insightful visualizations that help you understand
+                trends, case studies, and statistical analyses in the
+                agricultural sector.
+            </p>
+        </section>
 
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
-            <!-- Example 1 -->
-            <div class="edu-visualization-Page3">
-                <h3 class="fancy-heading">Analysis of Credit to Agriculture in the Indian Subcontinent (1991-2023)</h3>
+
+        <!-- Content Section -->
+        <section class="content" id="agriculturepage5">
+            <div class="dashboard">
+                <h4>Analysis of Credit to Agriculture in the Indian Subcontinent (1991-2023)</h4>
                 <p class="description">
                     <Strong>Introduction -:</Strong> <br>
                     This report provides an overview of the trends in credit allocation to the agriculture 
@@ -98,14 +100,17 @@
                     This interactive feature enhances the ability to analyze temporal and regional variations in credit 
                     allocation to agriculture.
 
-                </p> 
-                <iframe 
-                    width="900" height="650" 
-                    src="https://lookerstudio.google.com/embed/reporting/f8b785c8-38f1-4e30-b257-3db3280e1a1e/page/sjnaE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/f8b785c8-38f1-4e30-b257-3db3280e1a1e/page/sjnaE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/f8b785c8-38f1-4e30-b257-3db3280e1a1e/page/sjnaE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
                 <p class="description">
                     <span> Note -:</span>
                     The Credit to Agriculture dataset provides national data for over 130 countries on the amount
@@ -149,27 +154,26 @@
                     credit systems, serving as a guide for policymakers and stakeholders in the region.
                 
                     
-                </p> 
-                
-                
-                
+                </p>
+
             </div>
-            
 
-        </div>
 
-    </div>
+        </section>
+    </main>
 
-    <nav>
+
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="agriculture.html">Page 1</a>
             <a href="agriculturePage2.html">Page 2</a>
-            <a href="agriculturepage3.html">Page 3</a>
+            <a href="agriculturePage3.html">Page 3</a>
             <a href="AgriculturePage4.html">Page 4</a>
             <a class="Page5" href="agriculurePage5.html">Page 5</a>
             <a href="agriculturePage6.html">Page 6</a>
-    
+        </div>
     </nav>
 
     <!-- Footer -->

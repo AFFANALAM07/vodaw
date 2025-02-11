@@ -33,29 +33,31 @@
         <link rel="icon" href="thumnails/Agriculture_OrgL.jpeg.jpg">
     </head>
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
+            <h2>Agriculture Dashboards</h2>
+            <p>
+                Explore various datasets related to agriculture,
+                farming practices, and crop production around the world.
+                We provide insightful visualizations that help you understand
+                trends, case studies, and statistical analyses in the
+                agricultural sector.
+            </p>
+        </section>
 
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
-            <!-- Example 1 -->
-            <div class="edu-visualization-Page3">
-                <h3 class="fancy-heading">Analysis of Pesticide Consumption in India (1990-2022)</h3>
+
+        <!-- Content Section -->
+        <section class="content" id="agriculturepage3">
+            <div class="dashboard">
+                <h4>Analysis of Pesticide Consumption in India (1990-2022)</h4>
                 <p class="description">
                     <Strong>Introduction -:</Strong> <br>
                     This report delves into the trends in pesticide consumption in India from 1990 to 2022. 
@@ -102,14 +104,17 @@
                     A slicer is integrated into the visualization, enabling users to filter data by year or pesticide category. 
                     This dynamic feature allows stakeholders to pinpoint trends and patterns for specific periods or types of 
                     pesticides, enhancing analytical precision.
-                </p> 
-                <iframe 
-                    width="900" height="650" 
-                    src="https://lookerstudio.google.com/embed/reporting/c728ca94-5407-4c87-ac2c-9c74c5ddc30b/page/iMnaE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>  
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/c728ca94-5407-4c87-ac2c-9c74c5ddc30b/page/iMnaE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/c728ca94-5407-4c87-ac2c-9c74c5ddc30b/page/iMnaE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
                 <p class="description">
                     <Strong>Insights and Implications -:</Strong> <br>
 
@@ -141,26 +146,24 @@
 
                      Invest in advanced research to address specific pest and disease challenges efficiently.
                 </p> 
-                
-                
-                
+
             </div>
-            
 
-        </div>
 
-    </div>
+        </section>
+    </main>
 
-    <nav>
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="agriculture.html">Page 1</a>
             <a href="agriculturePage2.html">Page 2</a>
-            <a href="agriculturepage3.html">Page 3</a>
+            <a href="agriculturePage3.html">Page 3</a>
             <a href="AgriculturePage4.html">Page 4</a>
             <a href="agriculurePage5.html">Page 5</a>
             <a class="Page6" href="agriculturePage6.html">Page 6</a>
-    
+        </div>
     </nav>
 
     <!-- Footer -->

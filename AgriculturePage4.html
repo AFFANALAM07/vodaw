@@ -33,27 +33,30 @@
         <link rel="icon" href="thumnails/Agriculture_OrgL.jpeg.jpg">
     </head>
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
+            <h2>Agriculture Dashboards</h2>
+            <p>
+                Explore various datasets related to agriculture,
+                farming practices, and crop production around the world.
+                We provide insightful visualizations that help you understand
+                trends, case studies, and statistical analyses in the
+                agricultural sector.
+            </p>
+        </section>
 
-    <!-- Main Content -->
-    <div class="content">
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
-            <!-- Example 1 -->
-            <div class="edu-visualization-Page3">
-                <h3 class="fancy-heading">Analysis of Afghanistan's Agricultural Trade in Tons <br> (Imports and Exports)</h3>
+
+        <!-- Content Section -->
+        <section class="content" id="agriculturepage3">
+            <div class="dashboard">
+                <h4>Analysis of Afghanistan's Agricultural Trade in Tons <br> (Imports and Exports)</h4>
                 <p class="description">
                     <Strong>Introduction -:</Strong> <br>
                     This report examines Afghanistan's agricultural trade trends over several decades, 
@@ -61,6 +64,7 @@
                     significant patterns, and the potential implications for the country's agricultural 
                     sector.
                 </p>
+
                 <p class="description">
                     <Strong>Key Commodities in Afghanistan Trade -:</Strong> <br>
 
@@ -105,14 +109,18 @@
                     commodities of interest. <br>
                     A slicer feature allows users to filter data by year, offering a dynamic way to focus on 
                     specific timeframes and better understand temporal trade patterns.
-                </p> 
-                <iframe 
-                    width="900" height="650" 
-                    src="https://lookerstudio.google.com/embed/reporting/7f1ad2d1-03e6-4ec5-b7dc-0b9c75048e33/page/1rKaE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>
+
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/7f1ad2d1-03e6-4ec5-b7dc-0b9c75048e33/page/1rKaE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/7f1ad2d1-03e6-4ec5-b7dc-0b9c75048e33/page/1rKaE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
                 <p class="description">
                     <Strong>Insights and Implications -:</Strong> <br>
 
@@ -145,26 +153,23 @@
                     
                     Develop sustainable agricultural practices to ensure long-term productivity and trade resilience.
                 </p> 
-                
-                
-                
+
             </div>
-            
 
-        </div>
 
-    </div>
+        </section>
+    </main>
 
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="agriculture.html">Page 1</a>
             <a href="agriculturePage2.html">Page 2</a>
-            <a href="agriculturepage3.html">Page 3</a>
+            <a href="agriculturePage3.html">Page 3</a>
             <a class="Page4" href="AgriculturePage4.html">Page 4</a>
             <a href="agriculurePage5.html">Page 5</a>
             <a href="agriculturePage6.html">Page 6</a>
-    
+        </div>
     </nav>
 
     <!-- Footer -->
