@@ -25,7 +25,7 @@
      <link rel="icon" href="thumnails/Awards_OrgL.jpeg.jpg">
     <link rel="stylesheet" href="awards.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
+    
 
     <!-- Structured Data for Rich Results -->
     <script type="application/ld+json">
@@ -47,22 +47,16 @@
 
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Award Dashboards</h2>
             <p>
                 Explore a diverse range of Dashboards related to awards and recognitions
@@ -72,13 +66,12 @@
                 impact of awards on industries, demographics, and achievements, 
                 making the information accessible and meaningful.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
+        </section>
+        <section class="content" id="agriculture">
 
-            <!-- Example 1 -->
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Nobel Prize Winners in Field of Physics</h3>
+            <!-- NREGA Analysis -->
+            <div class="dashboard">
+                <h4>Nobel Prize Winners in Field of Physics</h4>
                 <p class="description">
                     This Dashboard likely presents a graphical representation of the data 
                     concerning the Nobel Prize winners, possibly highlighting the 
@@ -91,11 +84,15 @@
                     demographics and encourages future generations to 
                     pursue careers in science, knowing that their efforts 
                     might one day lead to similar accolades. <br>
-                </p>  
-                <iframe 
-                    width="600" height="475" 
-                    src="https://lookerstudio.google.com/embed/reporting/e7ac25b8-d205-46fa-abd3-04142e24b2c8/page/p_sx16dxjood" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p> 
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/e7ac25b8-d205-46fa-abd3-04142e24b2c8/page/p_sx16dxjood"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/e7ac25b8-d205-46fa-abd3-04142e24b2c8/page/p_sx16dxjood"
+                    frameborder="0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
                 <p class="description">
@@ -131,10 +128,9 @@
                 </p>
             </div>
 
-             <!-- Example 2 -->
-
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Nobel Prize Winners in Field of Peace</h3>
+            <!-- Nobel Winners in Field of Economics -->
+            <div class="dashboard">
+                <h4>Nobel Prize Winners in Field of Peace</h4>
                 <p class="description">
                     This Dashboard provides an in-depth perspective on Nobel Peace Prize winners, 
                     showcasing a timeline that maps the progression of laureates and their significant 
@@ -145,58 +141,35 @@
                     the visualization emphasizes the diversity and far-reaching impact of Nobel Peace Prize laureates.
 
                 </p>
-
-                <iframe 
-                        width="600" height="475" 
-                        src="https://lookerstudio.google.com/embed/reporting/cb845ee6-b174-4066-b62e-37419dcef5a9/page/p_god3p8iood" 
-                        frameborder="0" style="border:0" allowfullscreen 
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/cb845ee6-b174-4066-b62e-37419dcef5a9/page/p_god3p8iood"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
-                <p class="description">
-                    <br> The Nobel Peace Prize is one of the most prestigious honors in the world, awarded annually
-                    to individuals or organizations that have made significant contributions to peace and the betterment of humanity. 
-                    It has celebrated countless laureates since its inception, each contributing uniquely to global harmony and justice. 
-                    The prize reflects Alfred Nobel’s vision of fostering peace through human rights, diplomacy, and advocacy. <br> <br>
-
-                    Recent winners exemplify the evolving challenges and ideals of our times. In 2024, Nihon Hidankyo from Japan was honored 
-                    for its relentless efforts in urging governments to abolish nuclear weapons. This recognition underscores the ongoing global 
-                    struggle for disarmament and the dream of a nuclear-free world. The previous year, Narges Mohammadi from Iran received the prize 
-                    for her courageous fight against the oppression of women and her tireless promotion of human rights. Her work highlights the crucial 
-                    role of activism in challenging systemic injustices and advocating for freedom. <br> <br>
-
-                    In 2022, the Center for Civil Liberties in Ukraine and the Memorial Institute in Russia jointly received the prize. 
-                    Both organizations were recognized for their dedication to documenting war crimes, human rights abuses, and the misuse of power, 
-                    reflecting the power of civil society in protecting democracy and peace. These laureates symbolize the importance of speaking truth to power, 
-                    especially in regions plagued by conflict and authoritarianism. <br><br>
-
-                    Over its history, the Nobel Peace Prize has addressed a wide array of global issues. Laureates like Malala Yousafzai and the International 
-                    Campaign to Abolish Nuclear Weapons remind us of the transformative power of education and advocacy. Figures like Nelson Mandela have demonstrated 
-                    how forgiveness and reconciliation can heal nations. Meanwhile, organizations such as the United Nations and Médecins Sans Frontières showcase the 
-                    collective power of international cooperation. <br> <br>
-            
-
-                </p>
-
-
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/cb845ee6-b174-4066-b62e-37419dcef5a9/page/p_god3p8iood"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
+        </aside>
+    
 
-        </div>
-    </section>
+    </main>
 
-    <aside class="dashboard-note">
-        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
-    </aside>
 
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a  href="awards.html">Page 1</a>
-            <a  class="Page2" href="Awardspage2.html">Page 2</a>
+            <a href="awards.html">Page 1</a>
+            <a class="Page2" href="Awardspage2.html">Page 2</a>
             <a href="AwardsPage3.html">Page 3</a>
-            <a  href="AwardsPage4.html">Page 4</a>
-
+            <a href="AwardsPage4.html">Page 4</a>
+        </div>
+    
     </nav>
 
     <!-- Footer -->

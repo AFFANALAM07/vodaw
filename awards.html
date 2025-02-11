@@ -47,7 +47,6 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="awards.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
 
     <!-- Structured Data (JSON-LD for rich snippets) -->
     <script type="application/ld+json">
@@ -69,22 +68,15 @@
 
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
-
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Award Dashboards</h2>
             <p>
                 Explore a diverse range of Dashboards related to awards and recognitions
@@ -94,64 +86,71 @@
                 impact of awards on industries, demographics, and achievements, 
                 making the information accessible and meaningful.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
-            <!-- Example 3 -->
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Nobel Winners in Field of Chemistry</h3>
-                <p class="description">
+        </section>
+        <section class="content" id="agriculture">
+
+            <!-- NREGA Analysis -->
+            <div class="dashboard">
+                <h4>Nobel Winners in Field of Chemistry</h4>
+                <p>
                     The Nobel Prize Winners in Chemistry Dashboard is an interactive platform that 
                     showcases the achievements of Chemistry laureates. Users can filter the dataset 
                     by Year, Country, and Gender, gaining insights into award distributions, 
                     trends over time, and gender representation among winners. 
                     Intuitive slicers allow for easy customization such as the number of 
                     female laureates from different countries.
-                </p>   
-
-                <iframe 
-                        width="600" height="450" 
-                        src="https://lookerstudio.google.com/embed/reporting/c1c7fd41-1f59-44cd-81ff-6f25a18264e5/page/ruHDE" 
-                        frameborder="0" style="border:0" allowfullscreen 
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/c1c7fd41-1f59-44cd-81ff-6f25a18264e5/page/ruHDE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/c1c7fd41-1f59-44cd-81ff-6f25a18264e5/page/ruHDE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
-             <!-- Example 4 -->
-             <div class="edu-visualization">
-                <h3 class="fancy-heading">Nobel Winners in Field of Economics</h3>
-                <p class="description">
+
+            <!-- Nobel Winners in Field of Economics -->
+            <div class="dashboard">
+                <h4>Nobel Winners in Field of Economics</h4>
+                <p>
                     The Nobel Prize Winners in Economics Dashboard is an interactive platform 
                     that highlights the achievements of Nobel laureates in Economics. 
                     Users can filter the dataset by Year, Country, and Gender, providing insights 
                     into award distributions, trends over time, and gender representation among winners. 
                     Intuitive slicers facilitate easy customization, allowing users to view specific winners 
                     such as the number of female laureates from various countries.
-                </p>   
-
-                <iframe 
-                        width="600" height="450" 
-                        src="https://lookerstudio.google.com/embed/reporting/a671a309-5804-44ee-b8f6-4148db4ff276/page/7QIDE" 
-                        frameborder="0" style="border:0" allowfullscreen 
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </p>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/a671a309-5804-44ee-b8f6-4148db4ff276/page/7QIDE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/a671a309-5804-44ee-b8f6-4148db4ff276/page/7QIDE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
+        </aside>
+    
 
-        </div>
-    </section>
+    </main>
 
-    <aside class="dashboard-note">
-        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
-    </aside>
 
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a class="Page1" href="awards.html">Page 1</a>
             <a href="Awardspage2.html">Page 2</a>
-            <a  href="AwardsPage3.html">Page 3</a>
+            <a href="AwardsPage3.html">Page 3</a>
             <a href="AwardsPage4.html">Page 4</a>
+        </div>
     
     </nav>
 
