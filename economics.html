@@ -31,49 +31,64 @@
     
     <!-- Favicon -->
     <link rel="icon" href="thumnails/economic-line-icon-logo-illustration-free-vector (1).jpg">
-    
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="economics.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
 </head>
 
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <section class="intro">
             <h2>Economics Dashboards</h2>
-            <p>
-                Explore various Data Visualizations related to economic trends, policies, and global financial systems
-                across different regions and
-                industries. Our platform provides insightful visualizations that help you understand market dynamics,
-                key economic indicators, and
-                statistical analyses in the world of economics. From international trade patterns to sector-specific
-                economic developments,
-                we bring the data to life through visually engaging and interactive displays, making complex financial
-                data accessible and
-                comprehensible.
+            <p class="description">
+                Explore various data visualizations related to economic trends, policies, and global financial systems across different regions and industries. Our platform provides insightful visualizations that help you understand market dynamics, key economic indicators, and statistical analyses in the world of economics. From international trade patterns to sector-specific economic developments, we bring the data to life through visually engaging and interactive displays, making complex financial data accessible and comprehensible.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-            <!-- Example 1 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading"> Middle East Crude Oil Production in 2023 </h3>
+            <nav class="dashboard-nav">
+                <div class="nav-container">
+                    <a class="nav-item" href="#Middle east">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Middle East Crude Oil Production in 2023</span>
+                    </a>
+                    <a class="nav-item" href="#fdi">
+                        <span class="nav-icon">🌍</span>
+                        <span class="nav-text">State-wise Foreign Direct Investment (FDI) Equity Inflow</span>
+                    </a>
+                    <a class="nav-item" href="#funds">
+                        <span class="nav-icon">💰</span>
+                        <span class="nav-text">Disbursement of Funds from National Fund to Respective State Funds</span>
+                    </a>
+                    <a class="nav-item" href="#epf">
+                        <span class="nav-icon">💰</span>
+                        <span class="nav-text">Rate of Interest on EPF balances (1953-2021) in India</span>
+                    </a>
+                    <a class="nav-item" href="#gdp">
+                        <span class="nav-icon">📈</span>
+                        <span class="nav-text">India's GDP Per Capita Income</span>
+                    </a>
+                    <a class="nav-item" href="#statesgdp">
+                        <span class="nav-icon">📈</span>
+                        <span class="nav-text">Indian States GDP Per Capita Income</span>
+                    </a>
+                    <a class="nav-item" href="economicspage4.html">
+                        <span class="nav-icon">🏢</span>
+                        <span class="nav-text">Comparison Between Top Companies</span>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="content" id="econmoics">
+            <!--Middle East Crude Oil Production in 2023-->
+            <div class="dashboard" id="Middle east">
+                <h4>Middle East Crude Oil Production in 2023</h4>
                 <p class="description">
                     This dashboard provides an interactive visualization of
                     crude oil production across the Middle East. It features a slicer that
@@ -83,23 +98,25 @@
                     total output. In addition, a geographic map of the Middle East highlights the location of
                     each country alongside its crude oil production figures. A card
                     summarizes the overall daily crude oil production in barrels For every Country.<br> 
+                    <strong class="note">Note -:</strong> 1 bbl ≃ 119 Liter
                     
                 </p>
-                <p
-                    class="note"> Note -: 1 bbl ≃ 119 Liter
-                </p>
-                <iframe width="600" height="450"
+
+                <iframe class="iframe-desktop" width="800" height="600"
                     src="https://lookerstudio.google.com/embed/reporting/3470592d-759f-4c40-868d-6fd3c730e401/page/O4nFE"
-                    frameborder="0" style="border:0" allowfullscreen
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/3470592d-759f-4c40-868d-6fd3c730e401/page/O4nFE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
-            <!-- Example 4 -->
-            <div class="eco-visualization">
-
-                <h3 class="fancy-heading">State wise Foreign Direct Investment (FDI) Equity Inflow</h3>
+            <!-- State wise Foreign Direct Investment (FDI) Equity Inflow -->
+            <div class="dashboard" id="fdi">
+                <h4>State wise Foreign Direct Investment (FDI) Equity Inflow</h4>
                 <p class="description">
                     This dashboard provides an interactive visualization of
                     Foreign Direct Investment (FDI) in India.
@@ -113,31 +130,162 @@
                     Percentage Chart illustrating the distribution of Foreign Direct Investment
                     (FDI) by quarter.
                 </p>
-
-                <iframe loading="lazy" width="600" height="450"
+                <iframe class="iframe-desktop" width="800" height="680"
                     src="https://lookerstudio.google.com/embed/reporting/a1438036-d8c8-471f-aa11-71662c75675f/page/042BE"
-                    frameborder="0" style="border:0" allowfullscreen
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/a1438036-d8c8-471f-aa11-71662c75675f/page/042BE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
-    </section>
-    
+            <!-- State & UT wise List of Disbursement of Funds from National Fund to Respective State Funds -->
+            <div class="dashboard" id="funds">
+                <h4>Disbursement of Funds from National Fund to Respective State Funds</h4>
+                <p class="description">
+                    This dashboard visualizes the disbursement of funds from the National Fund to state funds,
+                    with controls for selecting the year and state. Users can filter the data by year to track
+                    financial distributions over time and by state to view specific disbursement details. 
+                    It provides an interactive platform for analyzing and comparing funding allocations across 
+                    different periods and regions.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/a85e2f43-7711-46db-82e9-c28db23d6285/page/92kCE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/a85e2f43-7711-46db-82e9-c28db23d6285/page/92kCE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
 
-    <nav>
-        <div class="nav-left">
-            <a href="index.html">Home</a>
-            <a class="Page1" href="economics.html">Page 1</a>
-            <a href="economicsPage2.html">Page 2</a>
-            <a href="EconomicsPage3.html">Page 3</a>
-            <a href="economicspage4.html">Page 4</a>
+            <!-- Rate of Interest on EPF balances (1953-2021) in India -->
+            <div class="dashboard" id="epf">
+                <h4>Rate of Interest on EPF balances (1953-2021) in India</h4>
+                <p class="description">
+                    The Rate of Interest on Employees Provident Fund (EPF)
+                    balances provides a detailed look at the annual interest
+                    rates applied to EPF contributions from 1952 to 2022. 
+                    This data helps to understand how these rates have influenced 
+                    the growth of employees' savings over the decades. 
+                    By examining the long-term trends in EPF interest rates, 
+                    individuals can gain valuable insights into historical 
+                    savings patterns, economic shifts, and the potential 
+                    impact on retirement or financial planning in India.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/c30a9bbc-fd0b-4733-89f4-56613b86a684/page/WE0BE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/c30a9bbc-fd0b-4733-89f4-56613b86a684/page/WE0BE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
 
-    </nav>
+            <!-- Indian States GDP Per Capita Income -->
+            <div class="dashboard" id="statesgdp">
+                <h4>Indian States GDP Per Capita Income</h4>
+                <p class="description">
+                    This time-lapse chart tracks the Top 10 States by GDP Per Capita in India from 2010-2011 to the current year. 
+                    It highlights the states with the highest economic performance, reflecting their growth and development over time.
+                    <br> <strong>Key Highlights:</strong>
+                    
+                    Goa consistently leads with the highest GDP per capita, driven by tourism and services.
+                    Sikkim, Delhi, and Chandigarh follow, showcasing strong economic growth. <br>
+                    The chart also includes smaller regions like Puducherry and Andaman & Nicobar Islands, emphasizing their unique contributions.
+                    Use the interactive features to explore yearly data, compare states, and observe how economic rankings have evolved.
+                </p>
+                <video 
+                    muted 
+                    loop 
+                    class="hover-video video-desktop">
+                    <source src="videos/SatesCpita.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <video 
+                    muted 
+                    loop 
+                    class="hover-video video-mobile">
+                    <source src="videos/SatesCpita.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>      
+            </div>
+
+            <!-- India's GDP Per Capita Income -->
+            <div class="dashboard" id="gdp">
+                <h4>Indian States GDP Per Capita Income</h4>
+                <p class="description">
+                    The time-lapse chart of India's GDP Per Capita Income 
+                    from 1960 to 2024 illustrates the country’s economic 
+                    growth over six decades. It highlights key phases, 
+                    including slow growth in the early years, a sharp rise 
+                    after economic liberalization in the 1990s, and continued 
+                    acceleration in the 2000s and beyond. Despite occasional 
+                    setbacks, the overall trend shows India’s steady rise 
+                    in per capita income, reflecting improvements in living 
+                    standards and economic development.
+                </p>
+                <video 
+                    muted 
+                    loop 
+                    class="hover-video video-desktop">
+                    <source src="videos/Per Capita (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <video 
+                    muted 
+                    loop 
+                    class="hover-video video-mobile">
+                    <source src="videos/Per Capita (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>      
+            </div>
+
+            <!-- ​COMPARISION BETWEEN TOP COMPANIES -->
+            <div class="dashboard" id="COMPANIES">
+                <h4>​COMPARISION BETWEEN TOP COMPANIES</h4>
+                <p class="description">
+                    This dashboard provides an in-depth comparison of the top global companies, 
+                    featuring key financial metrics, workforce data, and sectoral insights. 
+                    The bar charts highlight assets, market value, sales, and profit for the 
+                    leading companies, while the funnel chart illustrates employee distribution. 
+                    Pie charts showcase asset contributions by country and industry, 
+                    offering a global and sectoral perspective. Additionally, 
+                    a table lists the oldest top 100 companies, revealing historical trends. 
+                    With a sleek dark theme and interactive filters for Name, Country, and Industry, 
+                    the dashboard is designed for business analysts and professionals to explore 
+                    and analyze corporate performance effectively
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/a70712f4-1dce-439c-8117-aee82b0534a6/page/SECYE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/a70712f4-1dce-439c-8117-aee82b0534a6/page/SECYE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+
+        </section>
+    </main>
+
+
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided
@@ -159,16 +307,32 @@
                 window.open('index.html', '_blank'); // Opens the Law page in a new tab
             });
 
-        document.querySelectorAll('.hover-video').forEach(video => {
-            video.addEventListener('mouseenter', function () {
-                video.play(); // Play video on hover
+
+        document.addEventListener("DOMContentLoaded", function () {
+                const videos = document.querySelectorAll(".hover-video");
+
+                videos.forEach(video => {
+                    // For Desktop - Play on Hover, Pause on Mouse Leave
+                    if (video.classList.contains("video-desktop")) {
+                        video.addEventListener("mouseenter", () => video.play());
+                        video.addEventListener("mouseleave", () => video.pause());
+                    }
+
+                    // For Mobile - Tap to Play/Pause
+                    if (video.classList.contains("video-mobile")) {
+                        video.addEventListener("click", function () {
+                            if (video.paused) {
+                                video.play();
+                            } else {
+                                video.pause();
+                            }
+                        });
+                    }
+                });
             });
 
-            video.addEventListener('mouseleave', function () {
-                video.pause(); // Pause video when mouse leaves
-            });
-            
-        });
+
+
         // Function to handle iframe loading
         function iframeLoaded(iframe) {
             var container = iframe.parentNode;
