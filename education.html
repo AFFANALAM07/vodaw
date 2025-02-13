@@ -17,7 +17,7 @@
     <title>Education - VODAW</title>
     <link rel="stylesheet" href="education.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
+
     <link rel="icon" href="thumnails/Education_OrgL.jpg">
     <!-- Meta Description -->
     <meta name="description" content="Explore insightful education dashboards on VODAW. Dive into global trends, teacher diversity, and government expenditure on education.">
@@ -34,22 +34,16 @@
 </head>
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Education Dashboards</h2>
             <p>
                 Explore various Dashboards related to education trends,
@@ -61,16 +55,14 @@
                 through visually engaging and interactive displays, making complex
                 educational data accessible and easy to comprehend.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
+        </section>
 
-            <!-- Example 1 -->
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">State-wise Number of Teachers among Social Groups​
-                </h3>
+        <section class="content">
 
-                <p class="description">
+            <div class="dashboard" id="eduaction1">
+                <!--State-wise Number of Teachers among Social Groups​-->
+                <h4>State-wise Number of Teachers among Social Groups​</h4>
+                <p>
                     This dashboard visualizes the number of teachers across various
                     social groups, offering insights into diversity within the teaching profession.
                     Social categories such as gender, caste, and socio-economic backgrounds are
@@ -80,60 +72,70 @@
                     the number of teachers by social category and gender distribution,
                     providing a clear view of disparities and trends in the teaching workforce.
                 </p>
-
-                <iframe width="600" height="450"
+                <iframe class="iframe-desktop" width="800" height="600"
                     src="https://lookerstudio.google.com/embed/reporting/922e7ea5-e884-4cad-ac2d-a9b51909c525/page/K0eCE"
-                    frameborder="0" style="border:0" allowfullscreen
-                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                    loading="lazy">
-                </iframe>
-
-
-            </div>
-
-            <!-- Example 2 -->
-            <div class="edu-visualization">
-                <h3 class="fancy-heading">Expenditure on Education by Indian Goverments
-                </h3>
-
-                <p class="description">
-                    Expenditure on education by both the education department and other government
-                    departments plays a pivotal role in shaping the overall educational landscape of a country.
-                    This expenditure is often categorized by sector, reflecting the allocation of resources to
-                    specific areas of education, research, and related activities. The education department is
-                    typically entrusted with the primary responsibility of formulating policies, managing educational
-                    institutions, and overseeing the implementation of academic programs.
-                </p>
-                <iframe width="600" height="450"
-                    src="https://lookerstudio.google.com/embed/reporting/f0646407-c253-4c54-956e-c5088f0b88cb/page/iRPCE"
-                    frameborder="0" style="border:0" allowfullscreen
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
-
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/922e7ea5-e884-4cad-ac2d-a9b51909c525/page/K0eCE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
-        </div>
-    </section>
 
-    <aside class="dashboard-note">
-        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
-    </aside>
+            <!-- Expenditure on Education by Indian Goverments -->
+            <div class="dashboard" id="eduaction2">
+                <h4>Expenditure on Education by Indian Goverments</h4>
+                <p>
+                    Expenditure on education by both the education 
+                    department and other government departments plays 
+                    a pivotal role in shaping the overall educational 
+                    landscape of a country. This expenditure is often 
+                    categorized by sector, reflecting the allocation of 
+                    resources to specific areas of education, research, 
+                    and related activities. The education department is 
+                    typically entrusted with the primary responsibility 
+                    of formulating policies, managing educational 
+                    institutions, and overseeing the implementation of 
+                    academic programs.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/f0646407-c253-4c54-956e-c5088f0b88cb/page/iRPCE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/f0646407-c253-4c54-956e-c5088f0b88cb/page/iRPCE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
 
-    <nav>
-        
+
+    </main>
+
+    <nav class="second-nav">
+        <div class="nav-left">
             <a href="index.html">Home</a>
             <a class="Page1" href="education.html">Page 1</a>
             <a href="educationPage2.html">Page 2</a>
             <a href="EducationPage3.html">Page 3</a>
             <a href="EducationPage4.html">Page 4</a>
-
-
+            <a href="educationpage5.html">Page 5</a>
+            <a href="educationpage6.html">Page 6</a>
+        </div>
     </nav>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided
