@@ -222,6 +222,9 @@ main {
     .iframe-desktop {
         display: none;
     }
+    .iframe-desktop1{
+        display: none;
+    }
 
     .iframe-mobile {
         display: block;

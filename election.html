@@ -24,28 +24,19 @@
     <title>Election - VODAW</title>
     <link rel="stylesheet" href="election.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
     <link rel="icon" href="thumnails/election01.jpg">
     
 </head>
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
-
-    
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <section class="intro">
             <h2>Election Dashboards</h2>
             <p>
                 Explore various datasets related to Election result, Electrol History, 
@@ -53,32 +44,138 @@
                 visualizations that help you understand trends, case studies, 
                 and statistical analyses in this field.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-            <!-- Example 1 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading"> Gujarat Legislative Assembly Results </h3>
-                <p class="description">
+            <nav class="dashboard-nav">
+                <div class="nav-container">
+                    <a class="nav-item" href="#gujrat">
+                        
+                        <span class="nav-text">Gujarat Legislative Assembly Results</span>
+                    </a>
+                    <a class="nav-item" href="#bihar">
+                        
+                        <span class="nav-text">Bihar legislative Assembly Results</span>
+                    </a>
+                    <a class="nav-item" href="#jharkhand">
+                        
+                        <span class="nav-text">Jharkhand Legislative Assembly Results</span>
+                    </a>
+                    <a class="nav-item" href="#Maharashtra">
+                        
+                        <span class="nav-text">Maharashtra Legislative Assembly Results</span>
+                    </a>
+                    <a class="nav-item" href="#up">
+                        
+                        <span class="nav-text">Uttar Pradesh legislative Assembly Results</span>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="content">
+            <!--Gujarat Legislative Assembly Results-->
+            <div class="dashboard" id="gujrat">
+                <h4>Gujarat Legislative Assembly Results</h4>
+                <p>
                     The visualization provides an overview of the Gujarat Legislative Assembly
                     election results across various election years, from 1962 to 2022. 
                     It tracks the number of seats won by different political parties . 
                     A slicer is added to the visualization to enable users to filter the data
                     by party or election year, making it easier to focus on specific results
                     or trends for individual parties or particular election years.
-                </p> 
-                <iframe 
-                    width="600" height="600" 
-                    src="https://lookerstudio.google.com/embed/reporting/9432c6e0-faf2-4d00-b342-bb1848e1041a/page/JxyGE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                    
+                </p>
+
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/9432c6e0-faf2-4d00-b342-bb1848e1041a/page/JxyGE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/9432c6e0-faf2-4d00-b342-bb1848e1041a/page/JxyGE"
+                    frameborder="0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
             </div>
-            <!-- Example 2 -->
-            <div class="eco-visualization">
 
-                <h3 class="fancy-heading">Uttar Pradesh  Assembly Results</h3>
-                <p class="description">
+            <!-- Bihar legislative Election-->
+            <div class="dashboard" id="bihar">
+                <h4>Bihar legislative Election</h4>
+                <p>
+                    This dashboard analyzes Bihar Assembly Election data. 
+                    The line chart on the left shows voter turnout trends 
+                    over the years, while the pie chart on the right 
+                    highlights seat distribution among major parties. 
+                    The center displays the elected Chief Minister and 
+                    party for the selected year. The comparison chart 
+                    at the bottom tracks party performance over time. 
+                    Use the "Year" dropdown to filter data and hover over 
+                    charts for detailed insights.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/8ac57530-c787-4a68-8ef6-f860cfe2c7b1/page/ys3eE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/224488da-b16f-45e1-a71d-203a6bea1709/page/ys3eE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+
+
+            <!-- Jharkhand Legislative Assembly Results -->
+            <div class="dashboard" id="jharkhand">
+                <h4>Jharkhand Legislative Assembly Results</h4>
+                <p>
+                    The visualization provides an overview of the Jharkhand Legislative Assembly
+                    election results across various election years 
+                    It tracks the number of seats won by different political parties . 
+                    A slicer is added to the visualization to enable users to filter the data
+                    by party or election year, making it easier to focus on specific results
+                    or trends for individual parties or particular election years.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/7fab8c7c-789c-4ead-b406-cdede4bf860a/page/eriTE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/7fab8c7c-789c-4ead-b406-cdede4bf860a/page/eriTE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+
+
+
+            <!-- Maharashtra Legislative Assembly Results -->
+            <div class="dashboard" id="Maharashtra">
+                <h4>Maharashtra Legislative Assembly Results</h4>
+                <p>
+                    The visualization provides a detailed breakdown of the Maharashtra
+                    Legislative Assembly election results over years, 
+                    It tracks the 
+                    performance of various political parties
+                    showing the number of seats won by each party during different election cycles, 
+                    offering a historical overview of political trends and shifts in the state. 
+                    A slider has been added to filter the results by election years.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/30cb57de-4869-49a2-a37e-34bebb3308c2/page/OnUUE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/30cb57de-4869-49a2-a37e-34bebb3308c2/page/OnUUE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+
+            <!-- Uttar Pradesh Legislative Assembly Results -->
+            <div class="dashboard" id="up">
+                <h4>Uttar Pradesh Legislative Assembly Results</h4>
+                <p>
                     The visualization provides a detailed breakdown of the Uttar Pradesh
                     Legislative Assembly election results over years, 
                     It tracks the 
@@ -86,31 +183,28 @@
                     showing the number of seats won by each party during different election cycles, 
                     offering a historical overview of political trends and shifts in the state. 
                     A slider has been added to filter the results by election years. 
-                    
-                </p>   
-
-                <iframe 
-                    width="600" height="600" src="https://lookerstudio.google.com/embed/reporting/c08caaa0-8918-41f4-b20d-4a048062fc5b/page/EOsGE" 
-                    frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/c08caaa0-8918-41f4-b20d-4a048062fc5b/page/EOsGE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/c08caaa0-8918-41f4-b20d-4a048062fc5b/page/EOsGE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
-    </section>
+
+
+        </section>
+    </main>
     
-
-    <nav>
-        <div class="nav-left">
-            <a href="index.html">Home</a>
-            <a class="Page1" href="election.html">Page 1</a>
-            <a href="electionPage2.html">Page 2</a>
-            <a href="electionPage3.html">Page 3</a>
-
-    </nav>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided

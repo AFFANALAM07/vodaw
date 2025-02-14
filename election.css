@@ -1,4 +1,8 @@
-/* General body settings */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Body Settings */
 body {
     font-family: 'Arial', sans-serif;
     background: #f0f2f5;
@@ -6,153 +10,272 @@ body {
     padding: 0;
 }
 
-/* Content Styling */
-.content {
-    padding: 20px;
-    flex-grow: 1;
-    text-align: center;
-}
-
-/* Content Title Styling */
-.content-title {
-    border: 2px solid #ffffff;
-    padding: 10px;
-    background-color: #f8f8f8;
-    width: 98%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-.content-title h2 {
-    color: #000000;
-    font-size: 2.2em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-.content-title p {
-    color: #000000;
-    font-size: 1.1em;
-    margin-top: 10px;
-    text-align: left;
-}
-
-
-.eco-example {
+/* ====== HEADER (Desktop) ====== */
+header {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    /* Space between the two example containers */
-    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ffc107b3, #ff7a00);
+    padding: 5px;
     flex-wrap: wrap;
 }
 
-/* Each visualization container */
-.eco-visualization {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 45%;
+.logo {
+    width: 20vh;
+    max-width: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    background-color: transparent;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+header h1 {
+    flex: 1;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+}
+
+/* ====== MAIN CONTENT (Desktop) ====== */
+main {
+    padding: 0px;
+}
+
+.intro {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px black solid;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2c3e50;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.description {
+    line-height: 1.3;
+    font-size: .975rem;
+    color: #555;
+    text-align: left;
+}
+
+/* ====== NAVIGATION (Desktop) ====== */
+.dashboard-nav {
+    margin-top: 10px;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #081830;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #3e546a;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.nav-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* ====== CONTENT SECTION (Desktop) ====== */
+.content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(197, 197, 197);
     align-items: center;
-    justify-content: center;
 }
 
-.eco-visualization:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+.dashboard {
+    margin: 10px 60px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
-/* Fancy heading style */
-.fancy-heading {
-    font-size: 1.35em;
-    font-weight: bolder;
-    color: #000000;
+.dashboard h4 {
+    font-size: 1.5em;
+    color: #ff7a00;
+    margin: 5px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    position: relative;
-    text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    padding: 15px 0;
 }
 
-/* Description styling */
-.description {
+.dashboard p {
     font-size: 1em;
-    color: #464646;
-    margin-bottom: 15px;
-    text-align: left;
-    padding: 0px 40px;
+    color: #181818;
+    padding: 0 80px;
+    text-align: justify;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+    line-height: 1.45;
 }
 
-.note{
+.note {
     color: red;
     font-size: larger;
-    margin: 10px;
+    text-align: center;
 }
 
-/* Navigation Bar Styling */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    background-color: #bbbaba;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
+/* ====== IFRAME (Desktop) ====== */
+.iframe-desktop {
+    display: block;
+    margin: 20px auto;
+    width: 680px;
+    height: 680px;
 }
 
-/* Left Section */
-.nav-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
+/* Hide Mobile Iframe By Default */
+.iframe-mobile {
+    display: none;
 }
 
-.nav-left a {
-    text-decoration: none;
-    color: #007BFF;
-    background-color: white;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+/* ====== VIDEO (Desktop) ====== */
+.video-desktop {
+    width: 600px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
 }
 
-nav a.Page1 {
-    background-color: #007BFF;
-    color: white;
+.video-desktop:hover {
+    transform: scale(1.03);
 }
 
-nav a.Page2 {
-    background-color: #007BFF;
-    color: white;
+/* Hide Mobile Video By Default */
+.video-mobile {
+    display: none;
 }
 
-nav a.Page3 {
-    background-color: #007BFF;
-    color: white;
-}
+/* ========================================================= */
+/* ===================== MOBILE STYLES ===================== */
+/* ========================================================= */
 
-.nav-left a:hover {
-    background-color: #007BFF;
-    color: white;
-    transform: scale(1.1);
-    /* Smooth scaling effect */
-}
+@media (max-width: 768px) {
+    /* ===== HEADER (Mobile) ===== */
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
+    header h1 {
+        font-size: 1.6em;
+        line-height: 1.2;
+        margin-top: 5px;
+    }
 
-.nav-left {
-    position: relative;
+    .logo {
+        width: 140px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    /* ===== MAIN CONTENT (Mobile) ===== */
+    .intro {
+        max-width: 1200px;
+        margin: 20px 10px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        font-family: Lato, "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+    }
+
+    /* ===== NAVIGATION (Mobile) ===== */
+    .nav-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ===== CONTENT SECTION (Mobile) ===== */
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(197, 197, 197);
+        align-items: center;
+    }
+    .dashboard {
+        margin: 10px 5px;
+        padding: 5px;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    .dashboard h4 {
+        font-size: 1.1em;
+        color: #ff7a00;
+        margin: 5px;
+        text-transform: uppercase;
+    }
+    .dashboard p {
+        padding: 0 10px;
+        font-size: .875em;
+        text-align: left;
+    }
+
+    /* ===== IFRAME (Mobile) ===== */
+    .iframe-desktop {
+        display: none;
+    }
+
+    .iframe-mobile {
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+
+    /* ===== VIDEO (Mobile) ===== */
+    .video-desktop {
+        display: none;
+    }
+
+    .video-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
