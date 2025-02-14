@@ -207,8 +207,8 @@ main {
 }
 /* ====== VIDEO (Desktop) ====== */
 .video-desktop {
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
     transition: transform 0.3s ease-in-out;
 }
 

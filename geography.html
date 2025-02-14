@@ -18,30 +18,24 @@
     <meta name="keywords" content="Geography dashboards, Lakes of India, Rivers in India, Geographic trends, Environmental data visualization, Interactive dashboards, VODAW, Geographic data, Visualization of data, Geographic patterns, Environmental policies">
     <meta name="author" content="Visualisation of Data Around the World">
     <meta name="robots" content="index, follow">
-    <title>Geography VODAW</title>
+    <title>Geography - VODAW</title>
     <link rel="stylesheet" href="geography.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
     <link rel="icon" href="thumnails/Geography_OrgL.jpg">
 </head>
 
 <body>
     <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Geography Dashboards</h2>
             <p>
                 Explore a diverse array of data visualizations focused on geographic trends,
@@ -53,76 +47,74 @@
                 complex information accessible and easy to comprehend for a deeper understanding of
                 the world around us.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-            <!-- Example 1 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading">Lakes of India</h3>
-                <p class="description">
+        </section>
+
+        <section class="content">
+
+            <div class="dashboard" id="Lakes">
+                <!--Lakes of India​-->
+                <h4>Lakes of India</h4>
+                <p>
                     The visualization showcases India's major lakes, ranked by
                     surface area, with Vembanad Lake (2,033 km²) being the largest.
                     It allows for a detailed comparison of lake sizes across various regions.
                     Additionally, selecting a specific lake provides an interactive feature,
                     automatically directing you to its exact location via a satellite map.
                 </p>
-
-                <div class="iframe-container">
-                    <div class="loader">
-                        <img src="images/LoaderImg.webp" alt="Loading...">
-                    </div>
-                    <iframe width="600" height="450"
-                        src="https://lookerstudio.google.com/embed/reporting/98e3b86d-693e-4d3d-8c4f-17abb12d8bae/page/zJ5EE"
-                        frameborder="0" style="border:0" allowfullscreen
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        onload="iframeLoaded(this)">
-                    </iframe>
-                </div>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/98e3b86d-693e-4d3d-8c4f-17abb12d8bae/page/zJ5EE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/98e3b86d-693e-4d3d-8c4f-17abb12d8bae/page/zJ5EE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
-            <!-- Example 2 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading">Rivers in India</h3>
-                <p class="description">
+            <!-- Rivers in India -->
+            <div class="dashboard" id="Rivers">
+                <h4>Rivers in India</h4>
+                <p>
                     The visualization lists the major rivers in India, ranked by length,
                     with the Indus River (3,180 km) being the longest.
                     It provides a comparative overview of river lengths, including notable
                     rivers such as the Brahmaputra (2,900 km), Ganga (2,525 km).
                     This helps in understanding the
                     geographical span and significance of India’s rivers.
-
                 </p>
-
-                <div class="iframe-container">
-                    <div class="loader">
-                        <img src="images/LoaderImg.webp" alt="Loading...">
-                    </div>
-                    <iframe width="600" height="450"
-                        src="https://lookerstudio.google.com/embed/reporting/11d1023a-db5f-4ee6-9351-0396e47ec4b2/page/ZR6GE"
-                        frameborder="0" style="border:0" allowfullscreen
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        onload="iframeLoaded(this)">
-                    </iframe>
-                </div>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/11d1023a-db5f-4ee6-9351-0396e47ec4b2/page/ZR6GE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/11d1023a-db5f-4ee6-9351-0396e47ec4b2/page/ZR6GE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
 
-        </div>
-    </section>
-
-
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a class="Page1" href="geography.html">Page 1</a>
             <a href="geographyPage2.html">Page 2</a>
             <a href="#geographypage3.html">Page 3</a>
-
+        </div>
     </nav>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided

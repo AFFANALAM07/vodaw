@@ -25,28 +25,22 @@
         <meta name="twitter:description" content="Explore various dashboards related to law, legal systems, and judicial processes around the world.">
         <meta name="twitter:image" content="images/cover02.jpg">
         <title>Law - VODAW</title>
-        <link rel="stylesheet" href="lawPage2.css">
+        <link rel="stylesheet" href="law.css">
         <link rel="stylesheet" href="commonFooter.css">
-        <link rel="stylesheet" href="commonheader.css">
         <link rel="icon" href="thumnails/law.png">
     </head>
 <body>
     <!-- Header -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <section>
-        <div class="content-title">  
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Law Dashboards</h2>
             <p>
                 Explore various Dashboards related to law, legal systems, 
@@ -54,18 +48,14 @@
                 visualizations that help you understand trends, case studies, 
                 and statistical analyses in the legal field.
             </p>
-            
-            </div>
-    </section>
-    
-    <section class="chart-section">
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-             <!-- Example 3 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading">State and UTs-wise Number of Persons Benefited</h3>
-                <p class="description">
+        </section>
+
+        <section class="content">
+            <!--State and UTs-wise Number of Persons Benefited​-->
+            <div class="dashboard" id="PersonsBenefited">
+                
+                <h4>State and UTs-wise Number of Persons Benefited</h4>
+                <p>
                     The State and Union Territory-wise Beneficiaries Dashboard presents
                     a comprehensive view of the number of people benefiting across various
                     states and union territories in India. This dashboard is equipped with
@@ -74,21 +64,32 @@
                     and impact of programs, schemes, and initiatives across India’s diverse 
                     regions. Ideal for policymakers, researchers, and citizens, this dashboard 
                     serves as a valuable tool for analyzing regional differences in program uptake
-                    and impact, contributing to data-driven decision-making and resource allocation
-                </p>   
-                
-                <iframe 
-                    width="1000" height="750" 
-                    src="https://lookerstudio.google.com/embed/reporting/e5ba9342-0038-45fd-a094-47c8f6a0bcd3/page/R04FE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                    and impact, contributing to data-driven decision-making and resource allocation.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/e5ba9342-0038-45fd-a094-47c8f6a0bcd3/page/R04FE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/e5ba9342-0038-45fd-a094-47c8f6a0bcd3/page/R04FE"
+                    frameborder="0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
             </div>
 
-           
-        </div>
-    </section>
-    <nav>
+
+        </section>
+        
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
+
+
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="law.html">Page 1</a>

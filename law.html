@@ -27,27 +27,21 @@
         <title>Law - VODAW</title>
         <link rel="stylesheet" href="law.css">
         <link rel="stylesheet" href="commonFooter.css">
-        <link rel="stylesheet" href="commonheader.css">
         <link rel="icon" href="thumnails/law.png">
     </head>
     
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <!-- Header -->
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <section>
-        <div class="content-title">  
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Law Dashboards</h2>
             <p>
                 Explore various Dashboards related to law, legal systems, 
@@ -55,71 +49,77 @@
                 visualizations that help you understand trends, case studies, 
                 and statistical analyses in the legal field.
             </p>
-            
-            </div>
-    </section>
-    
-    <div class="content">
-        
-        <!-- Flexbox for two inline examples -->
-        <section class="eco-example">
-
-            <!-- Example 1 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading"> State wise victim compensation <br> (2016-2021) </h3>
-                <p class="description">
-                    This dashboard provides an interactive visualization of 
-                    Foreign Direct Investment (FDI) in India.
-                    Foreign Direct Investment (FDI) is a key source of investment
-                    in India, involving non-residents People investing in Indian companies. 
-                    This visualization showcases foreign investments across various 
-                    sectors, on this Dashboard featuring tools like a State Button  that allows users 
-                    to filter data by state. a Total FDI Amount in Crore (Rupees) 
-                    Scorecard displaying the overall FDI Amount received in Rupees, 
-                    an FDI Time Chart tracking trends over the years, and a Quarter-wise 
-                    Percentage Chart illustrating the distribution of Foreign Direct Investment 
-                    (FDI) by quarter.
-                </p> 
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/800ef1d8-a5d9-470c-99c9-cfbdf67c627c/page/hi6FE" 
-                    frameborder="0" style="border:0" allowfullscreen 
-                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-                </iframe>
-            </div>
-
-            <!-- Example 2 -->
-            <div class="eco-visualization">
-
-                <h3 class="fancy-heading">State wise functional Gram Nyayalayas (Rural Court)</h3>
-                <p class="description">
-                    This dashboard provides an interactive visualization of 
-                    Foreign Direct Investment (FDI) in India.
-                    Foreign Direct Investment (FDI) is a key source of investment
-                    in India, involving non-residents People investing in Indian companies. 
-                    This visualization showcases foreign investments across various 
-                    sectors, on this Dashboard featuring tools like a State Button  that allows users 
-                    to filter data by state. a Total FDI Amount in Crore (Rupees) 
-                    Scorecard displaying the overall FDI Amount received in Rupees, 
-                    an FDI Time Chart tracking trends over the years, and a Quarter-wise 
-                    Percentage Chart illustrating the distribution of Foreign Direct Investment 
-                    (FDI) by quarter. 
-                </p>   
-
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/8b7fe831-aef9-43e5-8dca-51f585cb4943/page/Od6FE" 
-                    \frameborder="0" style="border:0" allowfullscreen 
-                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-                </iframe>
-
-            </div>
-
-           
-            
         </section>
-    </div>
-    <nav>
+
+        <section class="content">
+            <!--State wise victim compensation (2016-2021)​-->
+            <div class="dashboard" id="victimcompensation">
+                
+                <h4>State wise victim compensation (2016-2021)</h4>
+                <p>
+                    This dashboard visualizes victim compensation and 
+                    application decisions across Indian states from 
+                    2016 to 2021. At the top, dropdown filters allow 
+                    users to select a specific State Legal Services 
+                    Authority and financial year to customize the data 
+                    view. The first chart displays state-wise compensation 
+                    amounts, where blue bars indicate the funds received by 
+                    each state. The second chart shows the number of 
+                    applications decided, with different colors 
+                    representing various years. Users can hover 
+                    over the charts to see detailed values. 
+                    Built in Looker Studio, this interactive 
+                    dashboard enables easy exploration of victim 
+                    compensation trends.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/800ef1d8-a5d9-470c-99c9-cfbdf67c627c/page/hi6FE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/800ef1d8-a5d9-470c-99c9-cfbdf67c627c/page/hi6FE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+
+            <!--State wise functional Gram Nyayalayas (Rural Court)​-->
+            <div class="dashboard" id="GramNyayalayas">
+                
+                <h4>State wise functional Gram Nyayalayas (Rural Court)</h4>
+                <p>
+                    This dashboard displays the number of functional 
+                    Gram Nyayalayas (Rural Courts) in India for 2021-2022. 
+                    The dropdown filter at the top allows users to select a 
+                    specific state for a focused view. The bar chart 
+                    represents the distribution, with Madhya Pradesh 
+                    leading at 89 courts, followed by Rajasthan, 
+                    Uttar Pradesh, and Kerala. States like Goa, 
+                    Telangana, and Ladakh have no functional rural 
+                    . Users can hover over the bars to see exact counts.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/8b7fe831-aef9-43e5-8dca-51f585cb4943/page/Od6FE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/8b7fe831-aef9-43e5-8dca-51f585cb4943/page/Od6FE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+
+        </section>
+        
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a class="Page1" href="law.html">Page 1</a>
@@ -131,7 +131,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
                 full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction

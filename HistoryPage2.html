@@ -18,44 +18,39 @@
     <link rel="stylesheet" href="History.css">
     <link rel="icon" href="thumnails/History_OrgL.jpg">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
 </head>
 
 <body>
     <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>History Dashboards</h2>
             <p>
-                Discover captivating Data Visualizations that bring history to life, 
-                showcasing key events, timelines, and civilizations across different eras. 
-                Our platform provides interactive insights into the rise and fall of empires, 
-                revolutions, and cultural transformations. Explore historical patterns such as wars, 
-                migrations, and technological advancements through visually engaging displays that make 
-                complex historical data easy to understand. Whether you're delving into ancient times or 
+                Discover captivating Data Visualizations that bring history to life,
+                showcasing key events, timelines, and civilizations across different eras.
+                Our platform provides interactive insights into the rise and fall of empires,
+                revolutions, and cultural transformations. Explore historical patterns such as wars,
+                migrations, and technological advancements through visually engaging displays that make
+                complex historical data easy to understand. Whether you're delving into ancient times or
                 modern history, our visualizations offer a unique way to grasp the past's impact on the present.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="edu-example">
-            <!-- Example 3 -->
-            <div class="edu-visualization">
+        </section>
 
-                <h3 class="fancy-heading">Deaths in conflicts Across World</h3>
-                <p class="description">
+        <section class="content">
+
+            <!--Deaths in conflicts Across World​-->
+            <div class="dashboard" id="Deathsconflicts">
+                
+                <h4>Deaths in conflicts Across World</h4>
+                <p>
                     This  Dashboard shows the number of Deaths in Conflicts 
                     from 1989 to 2022 in different countries. It highlights Countries with the most deaths, 
                     like Rwanda with 794,913, Syria with 402,416 etc . 
@@ -63,22 +58,23 @@
                     number of fatalities across regions. You’ll also find a world map that helps 
                     you see where the deaths happened and a slicer tool that lets you filter for 
                     specific countries you want to explore.
-                </p>   
-
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/98d6d58c-8004-4f4b-8d4d-dae537208f53/page/kpFEE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/98d6d58c-8004-4f4b-8d4d-dae537208f53/page/kpFEE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/98d6d58c-8004-4f4b-8d4d-dae537208f53/page/kpFEE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
-            <!-- Example 4 -->
-            <div class="edu-visualization">
-
-                <h3 class="fancy-heading">Deaths in World War I Across World</h3>
-                <p class="description">
+            <!-- Deaths in World War I Across World -->
+            <div class="dashboard" id="Deaths inWorldWarI">
+                <h4>Deaths in World War I Across World</h4>
+                <p>
                     This dashboard displays the deaths during World War I, 
                     categorized by nationality. Countries such as Russia (3,394,369 deaths), 
                     Turkey (3,271,844), and Germany (2,800,720) had the highest fatalities. 
@@ -87,38 +83,39 @@
                     You’ll also find a world map that helps you see where the deaths happened.
                     Also a Button Named Country that lets you filter for 
                     specific countries you want to See.
-                </p>   
-
-                <iframe 
-                    width="600" height="450" 
-                    src="https://lookerstudio.google.com/embed/reporting/4abbb359-9a0c-495a-a33e-b9a5f5a76bcb/page/yPOEE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/4abbb359-9a0c-495a-a33e-b9a5f5a76bcb/page/yPOEE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/4abbb359-9a0c-495a-a33e-b9a5f5a76bcb/page/yPOEE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
 
-       
-        </div>
-    </section>
 
-    <aside class="dashboard-note">
-        <strong> Note:- </strong>  Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard to make it full screen.
-    </aside>
-
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a  href="history.html">Page 1</a>
+            <a href="history.html">Page 1</a>
             <a class="Page2" href="HistoryPage2.html">Page 2</a>
-            <a href="#historypage3">Page 3</a>
-
+            <a href="#Historypage3.html">Page 3</a>
+        </div>
     </nav>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided

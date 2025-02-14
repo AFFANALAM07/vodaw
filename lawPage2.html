@@ -25,28 +25,23 @@
         <meta name="twitter:description" content="Explore various dashboards related to law, legal systems, and judicial processes around the world.">
         <meta name="twitter:image" content="images/cover02.jpg">
         <title>Law - VODAW</title>
-        <link rel="stylesheet" href="lawPage2.css">
+        <link rel="stylesheet" href="law.css">
         <link rel="stylesheet" href="commonFooter.css">
         <link rel="stylesheet" href="commonheader.css">
         <link rel="icon" href="thumnails/law.png">
     </head>
 <body>
     <!-- Header -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <section>
-        <div class="content-title">  
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Law Dashboards</h2>
             <p>
                 Explore various Dashboards related to law, legal systems, 
@@ -54,20 +49,14 @@
                 visualizations that help you understand trends, case studies, 
                 and statistical analyses in the legal field.
             </p>
-            
-            </div>
-    </section>
-    
-    <section class="chart-section">
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-             
+        </section>
 
-            <!-- Example 4 -->
-            <div class="eco-visualization" id="Constitution">
-                <h3 class="fancy-heading">Constitution of India</h3>
-                <p class="description">
+        <section class="content">
+            <!--Constitution of India​-->
+            <div class="dashboard" id="Constitution">
+                
+                <h4>Constitution of India</h4>
+                <p>
                     The Constitution of India Dashboard provides an interactive platform 
                     for exploring the detailed articles of the Indian Constitution. Users 
                     can filter by specific Article numbers, enabling quick access to each 
@@ -78,17 +67,30 @@
                     With its user-friendly interface, the dashboard streamlines navigation 
                     and enhances the learning experience, promoting easy and efficient access 
                     to information on India’s constitutional framework.
-                </p>   
-                <iframe 
-                    width="900" height="700" src="https://lookerstudio.google.com/embed/reporting/94e6fbf9-f607-4c05-bf7b-e25fa420fb84/page/U0wHE" 
-                    frameborder="0" style="border:0" allowfullscreen 
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/94e6fbf9-f607-4c05-bf7b-e25fa420fb84/page/U0wHE"
+                    frameborder="yes" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
                 </iframe>
-                
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/94e6fbf9-f607-4c05-bf7b-e25fa420fb84/page/U0wHE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
-        </div>
-    </section>
-    <nav>
+
+
+        </section>
+        
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
+
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a href="law.html">Page 1</a>
@@ -100,7 +102,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
                 full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction

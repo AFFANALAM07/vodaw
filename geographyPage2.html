@@ -21,103 +21,92 @@
     <title>Geography VODAW</title>
     <link rel="stylesheet" href="geography.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
     <link rel="icon" href="thumnails/Geography_OrgL.jpg">
  
 </head>
 
 <body>
     <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    
-    <section class="content">
-        <div class="content-title">
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Geography Dashboards</h2>
             <p>
-                Explore a diverse array of data visualizations focused on geographic trends, 
-                environmental policies, and regional systems across the globe. Our platform 
-                provides insightful visual representations that help you understand geographic 
-                patterns, climate data, and critical indicators in the field of geography. From 
-                global population distributions to region-specific environmental changes, we bring 
-                geographic data to life through interactive and visually engaging displays, making 
-                complex information accessible and easy to comprehend for a deeper understanding of 
+                Explore a diverse array of data visualizations focused on geographic trends,
+                environmental policies, and regional systems across the globe. Our platform
+                provides insightful visual representations that help you understand geographic
+                patterns, climate data, and critical indicators in the field of geography. From
+                global population distributions to region-specific environmental changes, we bring
+                geographic data to life through interactive and visually engaging displays, making
+                complex information accessible and easy to comprehend for a deeper understanding of
                 the world around us.
             </p>
-        </div>
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-          
-            <!-- Example 3 -->
-                        <div class="eco-visualization">
-                            <h3 class="fancy-heading">Lowest Points on Surface of Earth and below the Sea </h3>
-                            <p class="description">
-                                The visualization highlights the lowest points on Earth's surface
-                                 and below sea level, such as the Dead Sea (-423 meters) and Mariana
-                                  Trench (-10,902 meters). It compares these locations based on their depth.
-                            
-                            </p>   
-                            
-                            <div class="iframe-container">
-                                <div class="loader">
-                                    <img src="images/LoaderImg.webp" alt="Loading...">
-                                </div>
-                                <iframe 
-                                    width="600" height="450" 
-                                    src="https://lookerstudio.google.com/embed/reporting/f0fb2e99-f365-4464-88d8-4e4856fe900c/page/ZB0EE" 
-                                    frameborder="0" style="border:0" allowfullscreen 
-                                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                                    onload="iframeLoaded(this)">
-                                </iframe>
-                            </div>
-                    </div>
+        </section>
 
-             
+        <section class="content">
 
-            <!-- Example 4 -->
-                    <div class="eco-visualization">
-                        <h3 class="fancy-heading">Highest Mountain in Each Continent</h3>
-                        <p class="description">
-                            The visualization highlights the Highest Mountain Peaks in every Continent
-                            With a Map Chart to Show Exact Location And A bar Chart To Compare height
-                            and A slicer to Filter Out A Specific Peak. 
-                            
-                        </p>   
-                        
-                        <div class="iframe-container">
-                            <div class="loader">
-                                <img src="images/LoaderImg.webp" alt="Loading...">
-                            </div>
-                            <iframe 
-                                width="600" height="450" 
-                                src="https://lookerstudio.google.com/embed/reporting/fd7dca01-1596-4168-88e4-43b2a4cb1541/page/Dw6GE" 
-                                frameborder="0" style="border:0" allowfullscreen 
-                                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                                onload="iframeLoaded(this)"></iframe>
-                        </div>
-                    </div>
+            <div class="dashboard" id="LowestPoints">
+                <!--Lowest Points on Surface of Earth and below the Sea​-->
+                <h4>Lowest Points on Surface of Earth and below the Sea​</h4>
+                <p>
+                    The visualization highlights the lowest points on Earth's surface
+                    and below sea level, such as the Dead Sea (-423 meters) and Mariana
+                    Trench (-10,902 meters). It compares these locations based on their depth.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/f0fb2e99-f365-4464-88d8-4e4856fe900c/page/ZB0EE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/f0fb2e99-f365-4464-88d8-4e4856fe900c/page/ZB0EE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
 
-        </div>
-    </section>
-    
+            <!-- Highest Mountain in Each Continent-->
+            <div class="dashboard" id="HighestMountain">
+                <h4>Highest Mountain in Each Continent</h4>
+                <p>
+                    The visualization highlights the Highest Mountain Peaks in every Continent
+                    With a Map Chart to Show Exact Location And A bar Chart To Compare height
+                    and A slicer to Filter Out A Specific Peak. 
+                </p>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/fd7dca01-1596-4168-88e4-43b2a4cb1541/page/Dw6GE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/fd7dca01-1596-4168-88e4-43b2a4cb1541/page/Dw6GE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
 
-    <nav>
+
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a  href="geography.html">Page 1</a>
+            <a href="geography.html">Page 1</a>
             <a class="Page2" href="geographyPage2.html">Page 2</a>
-            <a href="#electionpage3.html">Page 3</a>
-
+            <a href="#geographypage3.html">Page 3</a>
+        </div>
     </nav>
 
     <!-- Footer -->
