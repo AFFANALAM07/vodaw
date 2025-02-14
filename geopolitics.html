@@ -21,28 +21,22 @@
     <title>GeoPolitics-VODAW</title>
     <link rel="stylesheet" href="geopolitics.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
+
     <link rel="icon" href="thumnails/Geopolitics_OrgL.jpg">
 </head>
 
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        <div class="content-title">
-            <h2> GeoPolitics Dashboards</h2>
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
+            <h2>GeoPolitics Dashboards</h2>
             <p>
                 Explore Dashboards related to geopolitics,
                 global power dynamics, and international relations across various regions
@@ -50,15 +44,14 @@
                 trends, diplomatic policies, and territorial changes, helping you grasp the
                 intricacies of global governance and security strategies.
             </p>
-        </div>
+        </section>
 
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
+        <section class="content">
 
-            <!-- Example 1 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading">Aerial Bombing Operations in World War II</h3>
-                <p class="description">
+            <div class="dashboard" id="Aerial">
+                <!--Aerial Bombing Operations in World War II​-->
+                <h4>Aerial Bombing Operations in World War II</h4>
+                <p>
                     The dashboard presents a breakdown of aerial bombing operations
                     during World War II, featuring a world map that uses color coding
                     to depict the intensity of bombing and a table showing the number
@@ -68,25 +61,22 @@
                     explore specific countries interactively.This feature provides a more
                     personalized and in-depth understanding of the bombing patterns during the World war II.
                 </p>
-
-                <div class="iframe-container">
-                    <div class="loader">
-                        <img src="images/LoaderImg.webp" alt="Loading...">
-                    </div>
-                    <iframe width="600" height="450"
-                        src="https://lookerstudio.google.com/embed/reporting/5fe763e5-b38f-426c-8770-44e1e90eafbc/page/wH7DE"
-                        frameborder="0" style="border:0" allowfullscreen
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        onload="iframeLoaded(this)">
-                    </iframe>
-                </div>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/5fe763e5-b38f-426c-8770-44e1e90eafbc/page/wH7DE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/5fe763e5-b38f-426c-8770-44e1e90eafbc/page/wH7DE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
-
-            <!-- Example 2 -->
-            <div class="eco-visualization" id="netmigration">
-                <h3 class="fancy-heading">2024 Global Net Migration</h3>
-                <p class="description">
+            <!-- 2024 Global Net Migration -->
+            <div class="dashboard" id="netmigration">
+                <h4>2024 Global Net Migration</h4>
+                <p>
                     This Dashboard presents the net migration status of countries in 2024.
                     On the world map, countries experiencing more people leaving are highlighted in red,
                     while those with more people arriving are shown in green. By using the Country Button,
@@ -95,32 +85,33 @@
                     If the background of the scorecard is red, it indicates a negative net migration,
                     meaning more people are leaving the country. If the background is green,
                     it indicates positive net migration, with more people moving into the country.
-
                 </p>
-
-                <div class="iframe-container">
-                    <div class="loader">
-                        <img src="images/LoaderImg.webp" alt="Loading...">
-                    </div>
-                    <iframe width="600" height="450"
-                        src="https://lookerstudio.google.com/embed/reporting/e7c7a8bf-3070-43c3-a2ab-800775fab57c/page/5ANFE"
-                        frameborder="0" style="border:0" allowfullscreen
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        onload="iframeLoaded(this)">
-                    </iframe>
-                </div>
+                <iframe class="iframe-desktop" width="800" height="680"
+                    src="https://lookerstudio.google.com/embed/reporting/e7c7a8bf-3070-43c3-a2ab-800775fab57c/page/5ANFE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/e7c7a8bf-3070-43c3-a2ab-800775fab57c/page/5ANFE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
 
-        </div>
-    </div>
 
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
             <a class="Page1" href="geopolitics.html">Page 1</a>
             <a href="GeopoliticsPage2.html">Page 2</a>
             <a href="#Page3">Page 3</a>
-
+        </div>
     </nav>
 
     <!-- Footer -->

@@ -19,103 +19,101 @@
     <meta name="author" content="VODAW">
     <meta name="robots" content="index, follow">
     <title>GeoPolitics-VODAW</title>
-    <link rel="stylesheet" href="geopoliticsPage2.css">
+    <link rel="stylesheet" href="geopolitics.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
     <link rel="icon" href="thumnails/Geopolitics_OrgL.jpg">
   
 </head>
 <body>
     <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        <div class="content-title">  
-            <h2> GeoPolitics Dashboards</h2>
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
+            <h2>GeoPolitics Dashboards</h2>
             <p>
-                Explore Dashboards related to geopolitics, 
-                global power dynamics, and international relations across various regions 
-                and nations. Our platform offers compelling visual insights into geopolitical 
-                trends, diplomatic policies, and territorial changes, helping you grasp the 
+                Explore Dashboards related to geopolitics,
+                global power dynamics, and international relations across various regions
+                and nations. Our platform offers compelling visual insights into geopolitical
+                trends, diplomatic policies, and territorial changes, helping you grasp the
                 intricacies of global governance and security strategies.
             </p>
-        </div>
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
+        </section>
 
-            <!-- Example 2 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading">List of State having Nuclear Weapons </h3>
-                <p class="description">
-                            This dashboard offers an expansive and detailed visualization
-                            of the global distribution of nuclear weapons, clearly illustrating
-                            the number possessed by each country on a world map. Countries that
-                            do not possess any nuclear weapons are prominently displayed in white, 
-                            providing a stark contrast and emphasizing the difference in nuclear 
-                            capabilities across nations.
-                </p>    
+        <section class="content">
 
-                <div class="iframe-container">
-                    <div class="loader">
-                        <img src="images/LoaderImg.webp" alt="Loading...">
-                    </div>
-                    <iframe 
-                        width="650" height="440" seamless frameborder="0" 
-                        scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSKAZOcNVdHYpvuXruw5aPqR1mSjtQUV_mE59Jlcub7dt2k2g6uhFLsKXj11FnQ5EkdBmrESFWRiXUN/pubchart?oid=1500871197&amp;format=interactive" 
-                        onload="iframeLoaded(this)">
-                    </iframe>
-                </div>
+            <div class="dashboard" id="NuclearWeapons">
+                <!--List of State having Nuclear Weapons​-->
+                <h4>List of State having Nuclear Weapons</h4>
+                <p>
+                    This dashboard offers an expansive and detailed visualization
+                    of the global distribution of nuclear weapons, clearly illustrating
+                    the number possessed by each country on a world map. Countries that
+                    do not possess any nuclear weapons are prominently displayed in white, 
+                    providing a stark contrast and emphasizing the difference in nuclear 
+                    capabilities across nations.
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSKAZOcNVdHYpvuXruw5aPqR1mSjtQUV_mE59Jlcub7dt2k2g6uhFLsKXj11FnQ5EkdBmrESFWRiXUN/pubchart?oid=1500871197&amp;format=interactive"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSKAZOcNVdHYpvuXruw5aPqR1mSjtQUV_mE59Jlcub7dt2k2g6uhFLsKXj11FnQ5EkdBmrESFWRiXUN/pubchart?oid=1500871197&amp;format=interactive"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
-            <!-- Example 4 -->
-                    <div class="eco-visualization">
-                            <h3 class="fancy-heading">Indian Population Growth</h3>
-                            <p class="description">
-                                The time-lapse chart of India's population growth from 1955 to
-                                2024 visually captures the expansion of the country's population
-                                over more than six decades. Starting in 1960, the chart shows how
-                                India's population steadily increased year after year. 
-                                In the early decades, the growth rate was rapid due to high birth 
-                                rates and improved healthcare.
-                               
-                            </p>   
-                            
-                            <div class="iframe-container">
-                                <!-- Replace iframe with video element -->
-                                <video 
-                                    width="600" height="450" 
-                                    muted 
-                                    loop 
-                                    class="hover-video">
-                                    <source src="videos/India Population (1).mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                    </div>
+            <!-- Indian Population Growth -->
+            <div class="dashboard" id="IndianPopulation">
+                <h4>Indian Population Growth</h4>
+                <p>
+                    The time-lapse chart of India's population growth from 1955 to
+                    2024 visually captures the expansion of the country's population
+                    over more than six decades. Starting in 1960, the chart shows how
+                    India's population steadily increased year after year. 
+                    In the early decades, the growth rate was rapid due to high birth 
+                    rates and improved healthcare.
+                </p>
+                <video 
+                    muted 
+                    loop 
+                    class="hover-video video-desktop">
+                    <source src="videos/India Population (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <video 
+                    muted 
+                    loop 
+                    class="hover-video video-mobile">
+                    <source src="videos/India Population (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>      
+            </div>
+        </section>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
 
 
-        </div>
-    </div>
 
-    <nav>
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a   href="geopolitics.html">Page 1</a>
+            <a href="geopolitics.html">Page 1</a>
             <a class="Page2" href="GeopoliticsPage2.html">Page 2</a>
             <a href="#Page3">Page 3</a>
-        
+        </div>
     </nav>
 
     <!-- Footer -->
@@ -131,29 +129,46 @@
     </footer>
 
     <script>
-
-            document.querySelectorAll('.hover-video').forEach(video => {
-                video.addEventListener('mouseenter', function() {
-                video.play(); // Play video on hover
-            });
-
-            video.addEventListener('mouseleave', function() {
-                 video.pause(); // Pause video when mouse leaves
-            });
-            document.getElementById('logo-id').addEventListener('click', function () {
+        document.getElementById('logo-id').addEventListener('click', function () {
                 window.open('index.html', '_blank'); // Opens the Law page in a new tab
             });
-            });
-            // Function to handle iframe loading
-            function iframeLoaded(iframe) {
-                var container = iframe.parentNode;
-                container.classList.add('iframe-loaded'); // Show iframe and hide loader
-            }
 
-            // Smooth scroll JavaScript
-            document.getElementById('home-btn').addEventListener('click', function() {
-                window.location.href = 'index.html'; // Navigates back to the main page
+
+        document.addEventListener("DOMContentLoaded", function () {
+                const videos = document.querySelectorAll(".hover-video");
+
+                videos.forEach(video => {
+                    // For Desktop - Play on Hover, Pause on Mouse Leave
+                    if (video.classList.contains("video-desktop")) {
+                        video.addEventListener("mouseenter", () => video.play());
+                        video.addEventListener("mouseleave", () => video.pause());
+                    }
+
+                    // For Mobile - Tap to Play/Pause
+                    if (video.classList.contains("video-mobile")) {
+                        video.addEventListener("click", function () {
+                            if (video.paused) {
+                                video.play();
+                            } else {
+                                video.pause();
+                            }
+                        });
+                    }
+                });
             });
+
+
+
+        // Function to handle iframe loading
+        function iframeLoaded(iframe) {
+            var container = iframe.parentNode;
+            container.classList.add('iframe-loaded'); // Show iframe and hide loader
+        }
+
+        // Smooth scroll JavaScript
+        document.getElementById('home-btn').addEventListener('click', function () {
+            window.location.href = 'index.html'; // Navigates back to the main page
+        });
 
     </script>
 </body>
