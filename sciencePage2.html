@@ -16,27 +16,21 @@
     <title>Science - VODAW</title>
     <link rel="stylesheet" href="science.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
     <link rel="icon" href="thumnails/Science_OrgL.jpg">
   
 </head>
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <!-- Header -->
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        <div class="content-title">  
+    <main>
+        <!-- Heading and Description -->
+        <section class="intro">
             <h2>Science Dashboards</h2>
             <p>
                 Dive into a vast collection of interactive data visualizations that
@@ -46,85 +40,60 @@
                 physics, biology, chemistry, and astronomy easier to understand through 
                 visually captivating displays. From the intricacies of molecular structures 
                 to the vastness of space exploration, we present key scientific data in a way
-               that is both engaging and accessible, helping you unravel the mysteries of the
+                that is both engaging and accessible, helping you unravel the mysteries of the
                 natural world and explore the frontiers of human knowledge.
             </p>
-        </div>
-        
-        <!-- Main Content -->
-   
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
-            <!-- Example 3 -->
-                    <div class="eco-visualization">
-                        <h3 class="fancy-heading">Planetary Information of Milky Way Galaxy</h3>
-                        <p class="description">
-                            The visualization compares various planetary characteristics, such as diameter,
-                            length of day, mean temperature, orbital period, and number of moons across 
-                            different planets like Jupiter, Saturn, Earth, and Pluto. It provides a detailed 
-                            comparison of key attributes of the planets in our solar system, showing significant 
-                            differences in size, rotation, and climate.A slicer allows users to filter the data by planet, 
-                            enabling focused exploration of individual planetary information.
-                        </p>   
-                        
-                        <div class="iframe-container">
-                            <div class="loader">
-                                <img src="images/LoaderImg.webp" alt="Loading...">
-                            </div>
-                            <iframe 
-                                width="600" height="450" 
-                                src="https://lookerstudio.google.com/embed/reporting/a68f92c9-d35b-4309-a160-df28e476381a/page/aLNFE" 
-                                frameborder="0" style="border:0" allowfullscreen 
-                                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                                onload="iframeLoaded(this)"></iframe>
-                        </div>
-                    </div>
+        </section>
 
-            <!-- Example 4 -->
-            <div class="eco-visualization">
-                <h3 class="fancy-heading">Space Exploration Missions (1950–2020) </h3>
-                <p class="description">
-                    The "Space Exploration Missions (1950–2020)" dashboard offers 
-                    an in-depth exploration of major space missions over 70 years. 
-                    It tracks the progression of space exploration, highlighting 
-                    key missions from different countries .Users can interact with data 
-                    filters to view missions by year, country, or mission type, enabling a 
-                    focused analysis of trends in space exploration. Visualizations provide 
-                    insights into the growth of space programs, major milestones, and the impact 
-                    of exploration on scientific discovery and innovation.
-                </p>   
+        <section class="content">
+            <!--Planetary Information of Milky Way Galaxy-->
+            <div class="dashboard" id="Milky_Way_Galaxy">
                 
-                <div class="iframe-container">
-                    <div class="loader">
-                        <img src="images/LoaderImg.webp" alt="Loading...">
-                    </div>
-                    <iframe 
-                        width="600" height="450" 
-                        src="https://lookerstudio.google.com/embed/reporting/91553d8d-2353-4dcd-a6cc-8f1fcfc18a56/page/GyJFE" 
-                        frameborder="0" style="border:0" allowfullscreen 
-                        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        onload="iframeLoaded(this)"></iframe>
-                </div>
+                <h4>Planetary Information of Milky Way Galaxy</h4>
+                <p>
+                    The visualization compares various planetary characteristics, such as diameter,
+                    length of day, mean temperature, orbital period, and number of moons across 
+                    different planets like Jupiter, Saturn, Earth, and Pluto. It provides a detailed 
+                    comparison of key attributes of the planets in our solar system, showing significant 
+                    differences in size, rotation, and climate.A slicer allows users to filter the data by planet, 
+                    enabling focused exploration of individual planetary information.
+                </p>   
+                </p>
+                <iframe class="iframe-desktop" width="800" height="600"
+                    src="https://lookerstudio.google.com/embed/reporting/a68f92c9-d35b-4309-a160-df28e476381a/page/aLNFE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="400" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/a68f92c9-d35b-4309-a160-df28e476381a/page/aLNFE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
             </div>
 
+        </section>
 
-        </div>
-    </div>
+        <aside>
+            <strong> Note:- </strong> Please click on <strong>[ ]</strong> in the bottom right corner of the dashboard
+            to make it full screen.
+        </aside>
+    </main>
 
-    <nav>
+
+    <nav class="second-nav">
         <div class="nav-left">
             <a href="index.html">Home</a>
-            <a  href="science.html">Page 1</a>
-            <a class="Page2" href="sciencePage2.html">Page 2</a>
-            <a href="#Page3">Page 3</a>
-        
+            <a href="science.html">Page 1</a>
+            <a class="Page2"  href="sciencePage2.html">Page 2</a>
+            <a href="sciencepage3.html">Page 3</a>
+            <a href="sciencePage4.html">Page 4</a>
+        </div>
     </nav>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
                 full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction

@@ -4,116 +4,317 @@ body {
     background: #f0f2f5;
     margin: 0;
     padding: 0;
-}
-
-
-
-/* Content Styling */
-.content {
-    padding: 20px;
-    flex-grow: 1;
-    text-align: center;
-}
-
-.content-title {
-    border: 2px solid #ffffff;
-    padding: 10px;
-    background-color: #f8f8f8;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.content-title h2 {
-    color: #000000;
-    font-size: 2em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.content-title p {
-    color: #666;
-    font-size: 1.1em;
-    margin-top: 10px;
-    text-align: left;
-}
-
-/* Law examples flexbox */
-.eco-example {
+  }
+  
+  /*HEADER */
+  
+  header {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ffc107b3, #ff7a00);
+    padding: 5px;
+    text-align: left;
     flex-wrap: wrap;
-}
-
-.eco-visualization {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 45%;
+    /* Ensure wrapping for smaller screens */
+  }
+  
+  .logo {
+    height: auto;
+    width: 20vh;
+    /* Responsive logo size */
+    max-width: 100%;
+    /* Prevent logo from exceeding container width */
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    background-color: transparent;
+    filter: brightness(1.5);
+    cursor: pointer;
+  }
+  
+  header h1 {
+    flex: 1;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(202, 198, 198, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    text-align: left;
+  
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* Stack header items vertically */
+        text-align: center;
+        /* Center text */
+    }
+  
+    header h1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.6em;
+        /* Reduce font size for smaller screens */
+        line-height: 1.2;
+        /* Adjust line height for better readability */
+        margin-top: 5px;
+        /* Add spacing between logo and heading */
+  
+    }
+  
+  
+    .logo {
+        width: 140px;
+        /* Set a fixed width for the logo */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-bottom: 5px;
+        /* Add spacing below the logo */
+    }
+  }
+  
+  /* Main Content */
+  main {
+    padding: 0px;
+  }
+  
+  /* Intro Section */
+  .intro {
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 3px;
+    background: linear-gradient(270deg, #c37596, #0e3119);
+    /* Vibrant gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .intro h2 {
+    font-size: 1.7em;
+    color: #fff;
+    /* Bright text color */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-out;
+    margin: 5px;
+  }
+  
+  .intro p {
+    font-size: .9em;
+    color: #fff;
+    line-height: 1.55;
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    margin: 5px;
+    text-align: left;
+  
+  }
+  
+  /* Animation for fade-in and slide-in */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+  /* Content Styling */
+  .content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(197, 197, 197);
     align-items: center;
-    justify-content: center;
-}
-
-.eco-visualization:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Fancy heading style */
-.fancy-heading {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.fancy-heading::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #ff9671;
-    margin-top: 5px;
-}
-
-/* Description styling */
-.description {
+  
+  }
+  
+  .dashboard {
+    margin: 10px 50px;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 15px;
+  
+  }
+  
+  .dashboard h4 {
+    font-size: 1.8em;
+    color: #ff7a00;
+    margin: 5px;
+    text-transform: uppercase;
+  }
+  
+  .dashboard p {
     font-size: 1em;
-    color: #666;
-    margin-bottom: 15px;
+    color: #181818;
+    padding: 0 50px;
+    line-height: 1.55;
     text-align: left;
-}
-
-/* Navigation Bar Styling */
-nav {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .dashboard p strong{
+    text-decoration: underline;
+    color: blue;
+    font-size: 1.2em;
+  }
+  .dashboard p span{
+    
+    color: red;
+  }
+  
+  .iframe-desktop {
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+    height: 600px;
+  
+  }
+  .iframe-desktop1 {
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+    height: 600px;
+  
+  }
+  
+  /* Default styles: hide mobile iframe */
+  .iframe-mobile {
+    display: none;
+  }
+  /* ====== VIDEO (Desktop) ====== */
+  .video-desktop {
+    width: 800px;
+    height: 600px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-desktop:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Hide Mobile Video By Default */
+  .video-mobile {
+    display: none;
+  }
+  
+  /* Show desktop iframe for screens wider than 768px */
+  @media (min-width: 769px) {
+    .iframe-desktop {
+        display: flex;
+    }
+  
+    .iframe-mobile {
+        display: none;
+    }
+  }
+  
+  /* Show mobile iframe for screens 768px or narrower */
+  @media (max-width: 768px) {
+    .iframe-desktop {
+        display: none;
+    }
+    .iframe-desktop1{
+        display: none;
+    }
+  
+    .iframe-mobile {
+        display: block;
+    }
+    .intro {
+        max-width: 1200px;
+        margin: 20px 10px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .intro h2 {
+        font-size: 1.5em;
+        color: #fff;
+        /* Bright text color */
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        animation: slideIn 1s ease-out;
+        margin: 5px;
+    }
+    /* ===== CONTENT SECTION (Mobile) ===== */
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(197, 197, 197);
+        align-items: center;
+    }
+    .dashboard {
+        margin: 10px 5px;
+        padding: 5px;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    .dashboard h4 {
+        font-size: 1.1em;
+        color: #ff7a00;
+        margin: 5px;
+        text-transform: uppercase;
+    }
+    .dashboard p {
+        padding: 0 10px;
+        font-size: .875em;
+        text-align: left;
+    }
+  
+  }
+  
+  /* Second Navigation */
+  .second-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    background-color: #d7d7d7;
+    background-color: #717171;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Roboto', sans-serif;
-}
-
-/* Left Section */
-.nav-left {
+  }
+  
+  .second-nav .nav-left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-
-}
-
-.nav-left a {
+  }
+  
+  .second-nav .nav-left a {
     text-decoration: none;
     color: #007BFF;
     background-color: white;
@@ -121,58 +322,83 @@ nav {
     padding: 8px 12px;
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-nav a.Page1 {
-    background-color: #007BFF;
-    color: white;
-}
-
-nav a.Page2 {
-    background-color: #007BFF;
-    color: white;
-}
-
-nav a.Page3 {
-    background-color: #007BFF;
-    color: white;
-}
-
-.nav-left a:hover {
+  }
+  
+  .second-nav .nav-left a:hover {
     background-color: #007BFF;
     color: white;
     transform: scale(1.1);
-    /* Smooth scaling effect */
-}
-
-
-.nav-left {
-    position: relative;
-}
-
-
-/* Loader and Iframe styles */
-.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    width: 650px;
-    background-color: #f9f9f9;
-}
-
-.loader img {
-    width: 600px;
-    height: 450px;
-}
-
-iframe {
-    display: none;
-}
-
-.iframe-loaded iframe {
-    display: block;
-}
-
-.iframe-loaded .loader {
-    display: none;
-}
+  }
+  
+  .second-nav a.Page1,
+  .second-nav a.Page2,
+  .second-nav a.Page3,
+  .second-nav a.Page4,
+  .second-nav a.Page5,
+  .second-nav a.Page6 {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .second-nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+  
+    .second-nav .nav-left {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+  
+    .second-nav .nav-left a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+  
+    .second-nav a.Page1,
+    .second-nav a.Page2,
+    .second-nav a.Page3,
+    .second-nav a.Page4,
+    .second-nav a.Page5,
+    .second-nav a.Page6 {
+        background-color: #0056b3;
+        color: white;
+    }
+  }
+  
+  aside {
+    background: white;
+    border-left: 5px solid #ff4e50;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  aside strong {
+    color: #d00000;
+  }
+  
+  @media (max-width: 768px) {
+    aside {
+        font-size: 14px;
+        padding: 12px;
+    }
+    /* ===== VIDEO (Mobile) ===== */
+    .video-desktop {
+        display: none;
+    }
+  
+    .video-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+  }
