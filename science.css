@@ -332,15 +332,17 @@ body {
     transform: scale(1.1);
   }
   
-  .second-nav a.Page1,
-  .second-nav a.Page2,
-  .second-nav a.Page3,
-  .second-nav a.Page4,
-  .second-nav a.Page5,
-  .second-nav a.Page6 {
-    background-color: #0056b3;
-    color: white;
-  }
+    .second-nav a.Page1,
+    .second-nav a.Page2,
+    .second-nav a.Page3,
+    .second-nav a.Page4,
+    .second-nav a.Page5,
+    .second-nav a.Page6,
+    .second-nav a.Page7,
+    .second-nav a.Page8 {
+        background-color: #0056b3;
+        color: white;
+    } 
   
   @media (max-width: 768px) {
     .second-nav {
@@ -364,7 +366,9 @@ body {
     .second-nav a.Page3,
     .second-nav a.Page4,
     .second-nav a.Page5,
-    .second-nav a.Page6 {
+    .second-nav a.Page6,
+    .second-nav a.Page7,
+    .second-nav a.Page8 {
         background-color: #0056b3;
         color: white;
     }
@@ -392,6 +396,7 @@ body {
     aside {
         font-size: 14px;
         padding:0;
+        display: none;
     }
     /* ===== VIDEO (Mobile) ===== */
     .video-desktop {
