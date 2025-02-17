@@ -20,26 +20,18 @@
     <title>Entertainment - VODAW</title>
     <link rel="stylesheet" href="Entertainment.css">
     <link rel="stylesheet" href="commonFooter.css">
-    <link rel="stylesheet" href="commonheader.css">
     <link rel="icon" href="thumnails/Entertainment_OrgL.jpg">
 </head>
 <body>
-    <!-- Header (unchanged) -->
-    <header class="grid-header">
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
-        </div>
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
-        <div class="logo-space">
-            <!-- Placeholder for logo -->
-            <img src="images/cover02.jpg" alt="Logo1" class="logo1" id="logo-id1" />
-        </div>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>
+            Visualisation of Data <br> Around the World
+        </h1>
     </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        <div class="content-title">  
+    <main>
+        <section class="intro">
             <h2>Entertainment Dashboards</h2>
             <p>
                 Explore a dynamic collection of interactive Dashboards
@@ -52,84 +44,63 @@
                 accessible way, allowing you to dive deeper into the industry’s biggest 
                 hits and cultural shifts shaping today’s entertainment landscape.
             </p>
-        </div>
+            <nav class="dashboard-nav">
+                <div class="nav-container">
+                    <a class="nav-item" href="entertainment.html">
+                        
+                        <span class="nav-text">Top Movies by IMDB Rating</span>
+                    </a>
 
-        
-        <!-- Flexbox for two inline examples -->
-        <div class="eco-example">
+                    <a class="nav-item" href="EntertainmentPage2.html">
+                        
+                        <span class="nav-text">Kareena Kapoor Filmography</span>
+                    </a>
+                    <a class="nav-item" href="EntertainmentPage3.html">
+                        
+                        <span class="nav-text">Tracks Streams on Spotify</span>
+                    </a>
+                    <a class="nav-item" href="EntertainmentPage4.html">
+                        
+                        <span class="nav-text">Akshay Kumar Filmography</span>
+                    </a>
 
-            <!-- Example 1 -->
-                    <div class="eco-visualization">
-                        <h3 class="fancy-heading"> Top Movies by IMDB Rating</h3>
-                        <p class="description">
-                            The visualization presents the top 100 movies based on IMDb ratings, 
-                            including classics like The Shawshank Redemption (9.3 rating), 
-                            The Godfather (9.2), and The Dark Knight (9.0). Each movie is 
-                            accompanied by details such as genre, description, year of release, 
-                            and IMDb rating. A slicer allows users to filter movies by title or 
-                            year, enabling focused exploration of specific films or time periods.
+                </div>
+            </nav>
+        </section>
 
-                        </p>    
+        <section class="content">
+            <!--Top Movies by IMDB Rating-->
+            <div class="dashboard" id="IMDB">
+                <h4>Top Movies by IMDB Rating</h4>
+                <p>
+                    The visualization presents the top 100 movies based on IMDb ratings, 
+                    including classics like The Shawshank Redemption (9.3 rating), 
+                    The Godfather (9.2), and The Dark Knight (9.0). Each movie is 
+                    accompanied by details such as genre, description, year of release, 
+                    and IMDb rating. A slicer allows users to filter movies by title or 
+                    year, enabling focused exploration of specific films or time periods.  
+                </p>
 
-                        <div class="iframe-container">
-                            <div class="loader">
-                                <img src="images/LoaderImg.webp" alt="Loading...">
-                            </div>
-                            <iframe 
-                                width="600" height="450" 
-                                src="https://lookerstudio.google.com/embed/reporting/1bb6fcdf-ccac-4630-abb8-23c2155b9a5e/page/8pDGE" 
-                                frameborder="0" style="border:0" allowfullscreen 
-                                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                                onload="iframeLoaded(this)">
-                            </iframe>
-                        </div>
-                    </div>
+                <iframe class="iframe-desktop"
+                    src="https://lookerstudio.google.com/embed/reporting/1bb6fcdf-ccac-4630-abb8-23c2155b9a5e/page/8pDGE"
+                    frameborder="yes" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+                <iframe class="iframe-mobile" width="375" height="450" scrolling="no"
+                    src="https://lookerstudio.google.com/embed/reporting/1bb6fcdf-ccac-4630-abb8-23c2155b9a5e/page/8pDGE"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
 
-            <!-- Example 2 -->
-                    <div class="eco-visualization">
-                        <h3 class="fancy-heading">Tracks Streams on Spotify</h3>
-                        <p class="description">
-                            The visualization is a bar chart showcasing Spotify's "Top 50 Tracks" 
-                            ranked by stream count, with values ranging from 0 to 4 billion streams. 
-                            The chart is accompanied by two interactive buttons labeled "Track Name" 
-                            and "Released Year." These buttons allow users to filter the displayed data 
-                            based on their preferred track or release year. 
-                            users can explore specific songs  
-                            providing a dynamic and customizable view of the most-streamed music.
 
-                        </p>    
-
-                        <div class="iframe-container">
-                            <div class="loader">
-                                <img src="images/LoaderImg.webp" alt="Loading...">
-                            </div>
-                            <iframe 
-                                width="600" height="450" 
-                                src="https://lookerstudio.google.com/embed/reporting/19011332-d78a-43f2-a2a1-bac096022d5e/page/0hFGE" 
-                                frameborder="0" style="border:0" allowfullscreen 
-                                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                                onload="iframeLoaded(this)">
-                            </iframe>
-                        </div>
-                    </div>
-   
-        </div>
-
-    </div>
-
-    <nav>
-        <div class="nav-left">
-            <a href="index.html">Home</a>
-            <a class="Page1" href="entertainment.html">Page 1</a>
-            <a href="EntertainmentPage2.html">Page 2</a>
-            <a href="#Page3">Page 3</a>
-        
-    </nav>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
                 full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction
@@ -143,21 +114,16 @@
                 window.open('index.html', '_blank'); // Opens the Law page in a new tab
             });
 
-            document.querySelectorAll('.hover-video').forEach(video => {
-                video.addEventListener('mouseenter', function() {
-                video.play(); // Play video on hover
-            });
+            document.addEventListener("DOMContentLoaded", function () {
+                let currentPage = window.location.pathname.split("/").pop(); // Get the current file name
+                let navItems = document.querySelectorAll(".nav-item");
 
-            video.addEventListener('mouseleave', function() {
-                 video.pause(); // Pause video when mouse leaves
+                navItems.forEach(item => {
+                    if (item.getAttribute("href") === currentPage) {
+                        item.classList.add("active"); // Add "active" class
+                    }
+                });
             });
-            
-            });
-            // Function to handle iframe loading
-            function iframeLoaded(iframe) {
-                var container = iframe.parentNode;
-                container.classList.add('iframe-loaded'); // Show iframe and hide loader
-            }
 
     </script>
 </body>

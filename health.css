@@ -190,11 +190,11 @@ main {
 .iframe-desktop {
   display: block;
   margin: 20px auto;
-  width: 670px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
 
 }
-.iframe-desktop1 {
+.iframe-desktop {
   display: block;
   margin: 20px auto;
   width: 800px;
