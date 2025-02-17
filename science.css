@@ -185,6 +185,8 @@ body {
   .dashboard p span{
     
     color: red;
+    font-weight: 700;
+    font-size: 1.1em;
   }
   
   .iframe-desktop {
@@ -311,7 +313,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
   }
   
   .second-nav .nav-left a {
@@ -320,7 +322,7 @@ body {
     background-color: white;
     font-size: 16px;
     padding: 8px 12px;
-    border-radius: 10px;
+    
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   }
   
@@ -370,15 +372,15 @@ body {
   
   aside {
     background: white;
-    border-left: 5px solid #ff4e50;
+    
     border-radius: 8px;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
     max-width: 90%;
-    margin: 5px auto;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
   
@@ -389,7 +391,7 @@ body {
   @media (max-width: 768px) {
     aside {
         font-size: 14px;
-        padding: 12px;
+        padding:0;
     }
     /* ===== VIDEO (Mobile) ===== */
     .video-desktop {
