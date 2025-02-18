@@ -183,8 +183,9 @@ body {
     font-size: 1.2em;
   }
   .dashboard p span{
-    
+    font-weight: 700;
     color: red;
+    font-size: 1.15em;
   }
   
   .iframe-desktop {
@@ -311,7 +312,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
   }
   
   .second-nav .nav-left a {
@@ -319,8 +320,8 @@ body {
     color: #007BFF;
     background-color: white;
     font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 10px;
+    padding: 7px 12px;
+    border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   }
   
@@ -335,7 +336,9 @@ body {
   .second-nav a.Page3,
   .second-nav a.Page4,
   .second-nav a.Page5,
-  .second-nav a.Page6 {
+  .second-nav a.Page6,
+  .second-nav a.Page7,
+  .second-nav a.Page8  {
     background-color: #0056b3;
     color: white;
   }
@@ -348,12 +351,12 @@ body {
   
     .second-nav .nav-left {
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
         justify-content: center;
     }
   
     .second-nav .nav-left a {
-        font-size: 14px;
+        font-size: 12px;
         padding: 6px 10px;
     }
   
@@ -362,7 +365,7 @@ body {
     .second-nav a.Page3,
     .second-nav a.Page4,
     .second-nav a.Page5,
-    .second-nav a.Page6 {
+    .second-nav a.Page6,.second-nav a.Page7,.second-nav a.Page8 {
         background-color: #0056b3;
         color: white;
     }

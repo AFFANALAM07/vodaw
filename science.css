@@ -246,6 +246,8 @@ body {
   
     .iframe-mobile {
         display: block;
+        width: 400px;
+        height: 500px;
     }
     .intro {
         max-width: 1200px;
