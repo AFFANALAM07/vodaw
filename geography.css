@@ -82,43 +82,35 @@ header h1 {
     }
 }
 
-/* Main Content */
-main {
+
+  /* ====== MAIN CONTENT (Desktop) ====== */
+  main {
     padding: 0px;
-}
-
-/* Intro Section */
-.intro {
+  }
+  
+  .intro {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #0fffff11;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px black solid;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #2c3e50;
     text-align: center;
-    padding: 3px;
-    background: linear-gradient(270deg, #c37596, #0e3119);
-    /* Vibrant gradient */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.intro h2 {
-    font-size: 1.7em;
-    color: #fff;
-    /* Bright text color */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    animation: slideIn 1s ease-out;
-    margin: 5px;
-}
-
-.intro p {
-    font-size: .9em;
-    color: #fff;
-    line-height: 1.55;
-    padding: 0px 10px;
-    margin-bottom: 5px;
-    margin: 5px;
+    margin: 7px;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: .975rem;
+    color: #555;
     text-align: left;
-
-}
+  }
 
 /* Animation for fade-in and slide-in */
 @keyframes fadeIn {
@@ -140,6 +132,52 @@ main {
         transform: translateX(0);
     }
 }
+
+  /* ====== NAVIGATION (Desktop) ====== */
+  .dashboard-nav {
+    margin-top: 10px;
+  }
+  
+  .nav-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #081830;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+  }
+
+  .nav-item.active {
+    background-color: #ff7a00;
+    color: black;
+    font-weight: bold;
+}
+  
+  .nav-item:hover {
+    background-color: #3e546a;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .nav-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+  
+  .nav-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+  }
 
 /* Content Styling */
 .content {
@@ -172,7 +210,7 @@ main {
 .dashboard p {
     font-size: 1em;
     color: #181818;
-    padding: 0 50px;
+    padding: 0 40px;
     line-height: 1.55;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
@@ -180,17 +218,19 @@ main {
 .dashboard p strong{
     text-decoration: underline;
     color: blue;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 .dashboard p span{
-    
+    font-size: 1.1em;
     color: red;
 }
 
 .iframe-desktop {
     display: block;
     margin: 20px auto;
-    width: 670px;
-    height: 500px;
+    width: 800px;
+    height: 600px;
 
 }
 .iframe-desktop1 {
@@ -254,7 +294,7 @@ main {
     }
     .intro h2 {
         font-size: 1.5em;
-        color: #fff;
+        color: black;
         /* Bright text color */
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
@@ -294,78 +334,6 @@ main {
 
 }
 
-/* Second Navigation */
-.second-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    background-color: #717171;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
-}
-
-.second-nav .nav-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.second-nav .nav-left a {
-    text-decoration: none;
-    color: #007BFF;
-    background-color: white;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.second-nav .nav-left a:hover {
-    background-color: #007BFF;
-    color: white;
-    transform: scale(1.1);
-}
-
-.second-nav a.Page1,
-.second-nav a.Page2,
-.second-nav a.Page3,
-.second-nav a.Page4,
-.second-nav a.Page5,
-.second-nav a.Page6 {
-    background-color: #0056b3;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .second-nav {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .second-nav .nav-left {
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
-    }
-
-    .second-nav .nav-left a {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-
-    .second-nav a.Page1,
-    .second-nav a.Page2,
-    .second-nav a.Page3,
-    .second-nav a.Page4,
-    .second-nav a.Page5,
-    .second-nav a.Page6 {
-        background-color: #0056b3;
-        color: white;
-    }
-}
 
 aside {
     background: white;
@@ -387,8 +355,7 @@ aside strong {
 
 @media (max-width: 768px) {
     aside {
-        font-size: 14px;
-        padding: 12px;
+        display: none;
     }
     /* ===== VIDEO (Mobile) ===== */
     .video-desktop {

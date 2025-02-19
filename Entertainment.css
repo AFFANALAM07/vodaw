@@ -241,6 +241,11 @@ html {
     .nav-container {
         grid-template-columns: 1fr;
     }
+    .nav-item.active {
+      background-color: gold;
+      color: black;
+      font-weight: bold;
+  }
   
     /* ===== CONTENT SECTION (Mobile) ===== */
     .content {

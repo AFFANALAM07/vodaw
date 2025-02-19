@@ -48,6 +48,37 @@
                 complex information accessible and easy to comprehend for a deeper understanding of
                 the world around us.
             </p>
+            <nav class="dashboard-nav">
+                <div class="nav-container">
+                    <a class="nav-item" href="geography.html">
+                        
+                        <span class="nav-text">Lakes of India</span>
+                    </a>
+
+                    <a class="nav-item" href="geography.html#Rivers">
+                        
+                        <span class="nav-text">Rivers in India</span>
+                    </a>
+                    <a class="nav-item" href="geographyPage2.html">
+                        
+                        <span class="nav-text">Lowest Points on Surface of Earth and below the Sea</span>
+                    </a>
+                    <a class="nav-item" href="geographyPage2.html#HighestMountain">
+                        
+                        <span class="nav-text">Highest Mountain in Each Continent</span>
+                    </a>
+                    <a href="GeographyPage3.html" class="nav-item">
+                        <span class="nav-text">Notable Active Volcanoes of the World</span>
+                    </a>
+                    <a href="GeographyPage4.html" class="nav-item">
+                        <span class="nav-text">Major Islands of the World</span>
+                    </a>
+                    <a href="GeographyPage5.html" class="nav-item">
+                        <span class="nav-text">Major Deserts of the World</span>
+                    </a>
+
+                </div>
+            </nav>
         </section>
 
         <section class="content">
@@ -100,19 +131,12 @@
 
 
 
-    <nav class="second-nav">
-        <div class="nav-left">
-            <a href="index.html">Home</a>
-            <a href="geography.html">Page 1</a>
-            <a class="Page2" href="geographyPage2.html">Page 2</a>
-            <a href="#geographypage3.html">Page 3</a>
-        </div>
-    </nav>
+
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">&copy; 2024 VODAW. All Rights Reserved. </p>
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
             <p> <span class="disclaimer">Disclaimer:</span> Unauthorized use , duplication of this material without
                 express and written
                 permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided
@@ -135,11 +159,16 @@
             window.open('index.html', '_blank'); // Opens the Law page in a new tab
             });
             
-        // Function to handle iframe loading
-        function iframeLoaded(iframe) {
-            var container = iframe.parentNode;
-            container.classList.add('iframe-loaded'); // Show iframe and hide loader
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop(); // Get the current file name
+            let navItems = document.querySelectorAll(".nav-item");
+
+            navItems.forEach(item => {
+                if (item.getAttribute("href") === currentPage) {
+                    item.classList.add("active"); // Add "active" class
+                }
+            });
+        });
 
     </script>
 </body>
