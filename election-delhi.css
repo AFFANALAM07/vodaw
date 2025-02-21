@@ -160,8 +160,9 @@ h2 {
 .iframe-desktop {
     display: block;
     margin: 20px auto;
-    width: 680px;
-    height: 680px;
+    width: 800px;
+    height: 620px;
+    border: 2px solid black;
 }
 
 /* Hide Mobile Iframe By Default */
@@ -270,7 +271,8 @@ h2 {
     .iframe-mobile {
         display: block;
         width: 100%;
-        height: 450px;
+        height: 540px;
+        border: 1px solid black;
     }
 
     /* ===== VIDEO (Mobile) ===== */
