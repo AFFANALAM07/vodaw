@@ -186,19 +186,13 @@ main {
     color: red;
 }
 
+
 .iframe-desktop {
     display: block;
     margin: 20px auto;
-    width: 670px;
-    height: 500px;
-
-}
-.iframe-desktop1 {
-    display: block;
-    margin: 20px auto;
     width: 800px;
-    height: 600px;
-
+    height: 610px;
+    border: 1px black solid;
 }
 
 /* Default styles: hide mobile iframe */
