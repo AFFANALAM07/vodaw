@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2ZDH8244S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Y2ZDH8244S');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore sports data visualizations from Olympics, FIFA World Cup, and more.">
+    <meta name="keywords" content="sports, data visualization, Olympics, FIFA, analytics">
+    <meta name="author" content="VODAW">
+    <meta property="og:title" content="Sport Data Visualizations - VODAW">
+    <meta property="og:description" content="Explore datasets on sports, athletes, competitions with visualizations.">
+    <meta property="og:image" content="images/cover02.jpg">
+    <meta property="og:url" content="https://vodaw.org/sports.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sport Data Visualizations - VODAW">
+    <meta name="twitter:description" content="Visualizations on Summer Olympics, FIFA World Cup, and more.">
+    <meta name="twitter:image" content="images/cover02.jpg">
+    <title>Sport - VODAW</title>
+    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="commonFooter.css">
+    <link rel="icon" href="thumnails/Sports_OrgL.jpg">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Screenshot 2024-11-29 113654.png" alt="vodaw_logo" id="logo-id">
+        <h1>Visualisation of Data <br> Around the World</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Sports Dashboards</h2>
+            <p>
+                Explore a variety of datasets related to sports, athletes, and competitions
+                from around the world. We provide insightful visualizations that highlight trends,
+                performance analytics, and statistical comparisons across different sports.
+            </p>
+            <nav class="dashboard-nav">
+                <div class="nav-container">
+                    <a class="nav-item" href="sports.html#olympic">
+                        <span class="nav-text">Summer Olympic Dashboard</span>
+                    </a>
+                    <a class="nav-item" href="sports.html">
+                        <span class="nav-text">Countries in Summer Olympics Medal Wins (1896-2024)</span>
+                    </a>
+                    <a class="nav-item" href="IplDash.html">
+                        <span class="nav-text">IPL Dashboard</span>
+                    </a>
+                    <a class="nav-item" href="sports01.html">
+                        <span class="nav-text">The Most Famous Sports in the World</span>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="content">
+            <div class="dashboard" id="famous_Sports">
+                <h4>The Most Famous Sports in the World</h4>
+                <p>
+                    A survey conducted to determine the most popular sports shows Football at the top,
+                    with an estimated 4 billion fans globally. The Y-axis shows the number of fans in billions,
+                    while the X-axis lists famous sports.
+                </p>
+                <div class="chart-container" style="position: relative; height:60vh; width:80vw; margin: 0 auto;">
+                    <canvas id="famousSportsChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 VODAW. All Rights Reserved. </p>
+            <p> <span class="disclaimer">Disclaimer:</span>  Unauthorized use , duplication of this material without express and written
+                permission from this site's owner is strictly prohibited. Excerpts and links may be used, provided that
+                full credit is given to VISUALISATION OF DATA AROUND THE WORLD(VODAW) with appropriate and specific direction
+                to the original content.
+            <br>The information provided by VODAW ("we," "us," or "our") on <a class="footerlink" href="https://vodaw.org/">https://vodaw.org/</a>  (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. </p>
+        </div>
+    </footer>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Your external JavaScript file -->
+    <script src="famous_sport_chart.js"></script>
+</body>
+</html>
