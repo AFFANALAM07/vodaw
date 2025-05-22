@@ -1,0 +1,67 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Circular Border -->
+  <circle cx="100" cy="100" r="95" fill="#fff" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Enlarged Pie Chart Segment -->
+  <path d="M100,100 L100,20 A80,80 0 0,1 170,100 Z" fill="url(#pieGradient)" opacity="0.5"/>
+
+  <!-- Enlarged Bar Chart Bars -->
+  <g transform="translate(50, 140)">
+    <rect x="0" y="-30" width="8" height="30" fill="url(#barGradient)"/>
+    <rect x="15" y="-50" width="8" height="50" fill="url(#barGradient)"/>
+    <rect x="30" y="-70" width="8" height="70" fill="url(#barGradient)"/>
+    <rect x="45" y="-40" width="8" height="40" fill="url(#barGradient)"/>
+  </g>
+
+  <!-- Circular Tagline with 3D Blend Effect -->
+  <text font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="url(#taglineGradient)" opacity="0.8" filter="url(#tagShadow)">
+    <textPath href="#circleTextPath" startOffset="50%" text-anchor="middle" side="left">
+      Visualisation of Data Around the World
+    </textPath>
+  </text>
+
+  <!-- VODAW Wordmark (on top, high visibility) -->
+  <text x="100" y="110" font-family="Poppins, sans-serif" font-size="36" font-weight="900" fill="#2DD4BF" stroke="#0F172A" stroke-width="1.5" text-anchor="middle" filter="url(#vodawGlow)">
+    VODAW
+  </text>
+
+  <!-- Definitions -->
+  <defs>
+    <!-- Tagline path (top arc, upside down) -->
+    <path id="circleTextPath" d="M100,15 a85,85 0 1,0 0.1,0" />
+
+    <!-- Pie chart gradient -->
+    <linearGradient id="pieGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Bar chart gradient -->
+    <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Tagline gradient for 3D look -->
+    <linearGradient id="taglineGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#2dd4bf" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Shadow effect for tagline -->
+    <filter id="tagShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feGaussianBlur in="offsetblur" stdDeviation="1"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glow filter for VODAW text -->
+    <filter id="vodawGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#2DD4BF" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+</svg>

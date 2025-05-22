@@ -31,35 +31,49 @@
         <!-- Placeholder for logo -->
         <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
     
-        <h1>VISUALISATION OF DATA <br>AROUND THE WORLD</h1>
+        <h1>visualization of Data Around the World</h1>
     
     </header>
 
-    <nav>
-        <div class="nav-left">
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle">Latest &#11033</a>
-                <div class="dropdown-content">
-                    <a href="electionPage2.html">Jharkhand & Mahrashtra Election Result </a>
-                    <a href="https://lookerstudio.google.com/s/nBnlF4LmfS0">Summer Olympic</a>
-                    <a href="videos/India Population.mp4">india's Population</a>
-                </div>
-            </div>
-            <a href="popularDashboard.html">Popular Dashboards</a>
-            <a href="#about-section">About Us</a>
-            <a href="#Contact-id">Contact Us</a>
-            
-            <a href="career.html" target="_blank">Career</a>
-            <!--<button class="Donate-tag" onclick="window.location.href='donate.html';">Donate</button>--> 
-            <div class="search-container">
-                <input type="text" id="searchBar" placeholder="Try 'Law', 'Technology', 'Sports' etc categories........">
-                <div id="suggestionsDropdown" class="search-suggestions"></div>
-            </div>
-            
-            <button id="darkModeToggle" onclick="window.open('services.html', '_blank');">Services</button>
-
+  <nav class="nav-container" role="navigation" aria-label="Main navigation">
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    <ul class="nav-menu">
+      <li class="nav-item nav-dropdown">
+        <a href="javascript:void(0)" class="nav-dropdown__toggle" aria-haspopup="true" aria-expanded="false">
+          Latest
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 10l5 5 5-5z"></path>
+          </svg>
+        </a>
+        <div class="nav-dropdown__content">
+          <a href="electionPage2.html">Jharkhand & Maharashtra Election Result</a>
+          <a href="https://lookerstudio.google.com/s/nBnlF4LmfS0">Summer Olympic</a>
+          <a href="videos/India Population.mp4">India's Population</a>
         </div>
-    </nav>
+      </li>
+      <li class="nav-item">
+        <a href="popularDashboard.html" class="nav-item__link">Popular Dashboards</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about-section" class="nav-item__link">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Contact-id" class="nav-item__link">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="career.html" class="nav-item__link" target="_blank">Career</a>
+      </li>
+      <!-- Commented Donate button preserved -->
+      <!-- <li class="nav-item">
+        <button class="nav-button" onclick="window.location.href='donate.html';">Donate</button>
+      </li> -->
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="searchBar" class="nav-search__input" placeholder="Try 'Law', 'Technology', 'Sports' etc categories..." aria-label="Search">
+      <div id="suggestionsDropdown" class="nav-search__suggestions"></div>
+    </div>
+    <button class="nav-button" onclick="window.open('services.html', '_blank');" aria-label="Services">Services</button>
+  </nav>
 
     <div class="running-bar">
         <div class="content">
@@ -213,23 +227,24 @@
                 <p class="para">More categories coming soon!</p>
             </div>
         </div>
-    </div>
-    <!-- About Us Section -->
-    <div class="about-us" id="about-section">
-        <h2>About Us</h2>
-        <p>
-            Welcome to our premier data visualization platform! We excel in converting intricate datasets into clear and
-            actionable insights using beautifully designed and accurate graphs. Our team of experienced data analysts is
-            adept at handling diverse datasets, delivering visualizations that uncover trends, patterns, and critical
-            information. Whether you’re exploring financial metrics, scientific data, or other complex datasets, our
-            sophisticated tools are designed to help you navigate and understand your data with confidence and ease.
+            <!-- About Us Section -->
+        <div class="about-us" id="about-section">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our premier data visualization platform! We excel in converting intricate datasets into clear and
+                actionable insights using beautifully designed and accurate graphs. Our team of experienced data analysts is
+                adept at handling diverse datasets, delivering visualizations that uncover trends, patterns, and critical
+                information. Whether you’re exploring financial metrics, scientific data, or other complex datasets, our
+                sophisticated tools are designed to help you navigate and understand your data with confidence and ease.
 
-            Our mission is to empower individuals and organizations with the knowledge needed to make data-driven
-            decisions. We take pride in providing user-friendly, visually appealing graphs that simplify the
-            complexities of data analysis. With a focus on accuracy and accessibility, we are committed to helping you
-            achieve clarity and insight from your data.
-        </p>
+                Our mission is to empower individuals and organizations with the knowledge needed to make data-driven
+                decisions. We take pride in providing user-friendly, visually appealing graphs that simplify the
+                complexities of data analysis. With a focus on accuracy and accessibility, we are committed to helping you
+                achieve clarity and insight from your data.
+            </p>
+        </div>
     </div>
+
     <!-- Contact Us Section -->
     <section class="Contact-sec" id="Contact-id">
         <div class="contact-container">
@@ -336,6 +351,12 @@
         document.getElementById('logo-id').addEventListener('click', function () {
             window.open('index.html', '_blank'); // Opens the Law page in a new tab
         });
+
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('nav-menu--active');
+        }
+
         document.getElementById('law-subgrid').addEventListener('click', function () {
             window.open('law.html', '_blank'); // Opens the Law page in a new tab
         });
