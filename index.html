@@ -23,6 +23,8 @@
     
     <link rel="icon" href="images/Screenshot 2024-11-29 113654.png">
     <link rel="stylesheet" href="commonFooter.css">
+    <!-- Add Google Fonts for Cyberpunk Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Courier+New&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +34,25 @@
         <img src="images/Screenshot 2024-11-29 113654.png" alt="Logo" class="logo" id="logo-id" />
     
         <h1>visualization of Data Around the World</h1>
+
+        <a href="contribution.html" style="background-color: #c8e6e8; color: #34607a; padding: 5px 10px; border-radius: 0px; text-decoration: none; font-weight: lighter; transition: all 0.3s ease; margin-right: 100px; border: 2px solid white; font-size: 15px; display: inline-flex; align-items: center; gap: 5px;">
+            <!-- SVG Icon for Data Visualization (Chart) -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34607a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="M7 14v4" />
+                <path d="M11 10v8" />
+                <path d="M15 6v12" />
+            </svg>
+            Contribute to VODAW
+        </a>
+        <style>
+            a:hover {
+                background-color: #b0d8da;
+                transform: scale(1.05);
+            }
+        </style>
+
+
     
     </header>
 
@@ -63,27 +84,37 @@
       <li class="nav-item">
         <a href="career.html" class="nav-item__link" target="_blank">Career</a>
       </li>
+
+      <li class="nav-item">
+        <a href="services.html" class="nav-item__link" target="_blank">Services</a>
+      </li>
       <!-- Commented Donate button preserved -->
       <!-- <li class="nav-item">
         <button class="nav-button" onclick="window.location.href='donate.html';">Donate</button>
       </li> -->
     </ul>
-    <div class="nav-search">
-      <input type="text" id="searchBar" class="nav-search__input" placeholder="Try 'Law', 'Technology', 'Sports' etc categories..." aria-label="Search">
-      <div id="suggestionsDropdown" class="nav-search__suggestions"></div>
-    </div>
-    <button class="nav-button" onclick="window.open('services.html', '_blank');" aria-label="Services">Services</button>
+   
+        <div class="nav-search" style="position: relative; display: flex; align-items: center;">
+        <input type="text" id="searchBar" class="nav-search__input" placeholder="Try 'Law', 'Technology', 'Sports' etc categories..." aria-label="Search" style="padding-right: 40px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 10px; cursor: pointer;">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <div id="suggestionsDropdown" class="nav-search__suggestions"></div>
+        </div>
+            
   </nav>
 
-    <div class="running-bar">
+    <!-- <div class="running-bar">
         <div class="content">
             <p><strong>Trending:</strong> The IPL Fever is on! Click the link to explore all IPL records: <a href="IplDash.html">IPL Dashboard</a></p>
 
           
         </div>
-    </div>
+    </div> -->
     
-    
+
+
         
     <div class="grid2" id="subgrid-section">
 
@@ -347,9 +378,9 @@
 
     <script>
         
-        // JavaScript for navigating to Law page
+       
         document.getElementById('logo-id').addEventListener('click', function () {
-            window.open('index.html', '_blank'); // Opens the Law page in a new tab
+            window.open('index.html', '_blank'); 
         });
 
         function toggleMenu() {
